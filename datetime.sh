@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Script for calculating datetime timestamp of start and end of attack commands
+
 if [ $# -lt 1 ]; then
     echo "Usage: $0 <command>"
     exit 1
