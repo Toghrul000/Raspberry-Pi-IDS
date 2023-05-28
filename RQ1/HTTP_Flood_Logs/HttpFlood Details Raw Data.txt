@@ -1,0 +1,1947 @@
+Attacker:
+
+
+┌──(kali㉿kali)-[~]
+└─$ sudo ./datetime.sh slowhttptest -c 1000 -H -g -o slowhttp -i 10 -r 200 -t GET -u http://192.168.178.81:5000/ -x 24 -p 3
+Timestamp START: 05/15-20:59:39.419433906
+Mon May 15 20:59:39 2023:
+Mon May 15 20:59:39 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 20:59:39 2023:
+slow HTTP test status on 0th second:
+
+initializing:        0
+pending:             1
+connected:           0
+error:               0
+closed:              0
+service available:   YES
+Mon May 15 20:59:44 2023:
+Mon May 15 20:59:44 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 20:59:44 2023:
+slow HTTP test status on 5th second:
+
+initializing:        0
+pending:             2
+connected:           375
+error:               0
+closed:              465
+service available:   YES
+Mon May 15 20:59:49 2023:
+Mon May 15 20:59:49 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 20:59:49 2023:
+slow HTTP test status on 10th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 20:59:54 2023:
+Mon May 15 20:59:54 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 20:59:54 2023:
+slow HTTP test status on 15th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 20:59:59 2023:
+Mon May 15 20:59:59 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 20:59:59 2023:
+slow HTTP test status on 20th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:00:04 2023:
+Mon May 15 21:00:04 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:00:04 2023:
+slow HTTP test status on 25th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:00:09 2023:
+Mon May 15 21:00:09 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:00:09 2023:
+slow HTTP test status on 30th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:00:14 2023:
+Mon May 15 21:00:14 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:00:14 2023:
+slow HTTP test status on 35th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:00:19 2023:
+Mon May 15 21:00:19 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:00:19 2023:
+slow HTTP test status on 40th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:00:24 2023:
+Mon May 15 21:00:24 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:00:24 2023:
+slow HTTP test status on 45th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:00:29 2023:
+Mon May 15 21:00:29 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:00:29 2023:
+slow HTTP test status on 50th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:00:34 2023:
+Mon May 15 21:00:34 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:00:34 2023:
+slow HTTP test status on 55th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:00:39 2023:
+Mon May 15 21:00:39 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:00:39 2023:
+slow HTTP test status on 60th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:00:44 2023:
+Mon May 15 21:00:44 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:00:44 2023:
+slow HTTP test status on 65th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:00:49 2023:
+Mon May 15 21:00:49 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:00:49 2023:
+slow HTTP test status on 70th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:00:54 2023:
+Mon May 15 21:00:54 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:00:54 2023:
+slow HTTP test status on 75th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:00:59 2023:
+Mon May 15 21:00:59 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:00:59 2023:
+slow HTTP test status on 80th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:01:04 2023:
+Mon May 15 21:01:04 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:01:04 2023:
+slow HTTP test status on 85th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:01:09 2023:
+Mon May 15 21:01:09 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:01:09 2023:
+slow HTTP test status on 90th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:01:14 2023:
+Mon May 15 21:01:14 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:01:14 2023:
+slow HTTP test status on 95th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:01:19 2023:
+Mon May 15 21:01:19 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:01:19 2023:
+slow HTTP test status on 100th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:01:24 2023:
+Mon May 15 21:01:24 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:01:24 2023:
+slow HTTP test status on 105th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:01:29 2023:
+Mon May 15 21:01:29 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:01:29 2023:
+slow HTTP test status on 110th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:01:34 2023:
+Mon May 15 21:01:34 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:01:34 2023:
+slow HTTP test status on 115th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:01:39 2023:
+Mon May 15 21:01:39 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:01:39 2023:
+slow HTTP test status on 120th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:01:44 2023:
+Mon May 15 21:01:44 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:01:44 2023:
+slow HTTP test status on 125th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:01:49 2023:
+Mon May 15 21:01:49 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:01:49 2023:
+slow HTTP test status on 130th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:01:54 2023:
+Mon May 15 21:01:54 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:01:54 2023:
+slow HTTP test status on 135th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:01:59 2023:
+Mon May 15 21:01:59 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:01:59 2023:
+slow HTTP test status on 140th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:02:04 2023:
+Mon May 15 21:02:04 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:02:04 2023:
+slow HTTP test status on 145th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:02:09 2023:
+Mon May 15 21:02:09 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:02:09 2023:
+slow HTTP test status on 150th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:02:14 2023:
+Mon May 15 21:02:14 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:02:14 2023:
+slow HTTP test status on 155th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:02:19 2023:
+Mon May 15 21:02:19 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:02:19 2023:
+slow HTTP test status on 160th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:02:24 2023:
+Mon May 15 21:02:24 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:02:24 2023:
+slow HTTP test status on 165th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:02:29 2023:
+Mon May 15 21:02:29 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:02:29 2023:
+slow HTTP test status on 170th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:02:34 2023:
+Mon May 15 21:02:34 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:02:34 2023:
+slow HTTP test status on 175th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:02:39 2023:
+Mon May 15 21:02:39 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:02:39 2023:
+slow HTTP test status on 180th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:02:44 2023:
+Mon May 15 21:02:44 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:02:44 2023:
+slow HTTP test status on 185th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:02:49 2023:
+Mon May 15 21:02:49 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:02:49 2023:
+slow HTTP test status on 190th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:02:54 2023:
+Mon May 15 21:02:54 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:02:54 2023:
+slow HTTP test status on 195th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:02:59 2023:
+Mon May 15 21:02:59 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:02:59 2023:
+slow HTTP test status on 200th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:03:04 2023:
+Mon May 15 21:03:04 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:03:04 2023:
+slow HTTP test status on 205th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:03:09 2023:
+Mon May 15 21:03:09 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:03:09 2023:
+slow HTTP test status on 210th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:03:14 2023:
+Mon May 15 21:03:14 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:03:14 2023:
+slow HTTP test status on 215th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:03:19 2023:
+Mon May 15 21:03:19 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:03:19 2023:
+slow HTTP test status on 220th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:03:24 2023:
+Mon May 15 21:03:24 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:03:24 2023:
+slow HTTP test status on 225th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:03:29 2023:
+Mon May 15 21:03:29 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:03:29 2023:
+slow HTTP test status on 230th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:03:34 2023:
+Mon May 15 21:03:34 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:03:34 2023:
+slow HTTP test status on 235th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:03:39 2023:
+Mon May 15 21:03:39 2023:
+        slowhttptest version 1.8.2
+ - https://github.com/shekyan/slowhttptest -
+test type:                        SLOW HEADERS
+number of connections:            1000
+URL:                              http://192.168.178.81:5000/
+verb:                             GET
+cookie:
+Content-Length header value:      4096
+follow up data max size:          52
+interval between follow up data:  10 seconds
+connections per seconds:          200
+probe connection timeout:         3 seconds
+test duration:                    240 seconds
+using proxy:                      no proxy
+
+Mon May 15 21:03:39 2023:
+slow HTTP test status on 240th second:
+
+initializing:        0
+pending:             0
+connected:           374
+error:               0
+closed:              626
+service available:   NO
+Mon May 15 21:03:40 2023:
+Test ended on 241th second
+Exit status: Hit test time limit
+CSV report saved to slowhttp.csv
+HTML report saved to slowhttp.html
+Timestamp END: 05/15-21:03:40.436763490
+
+
+
+
+
+Defender:
+
+response time:  20:59:39.730078 -  20:59:39.419433906 => 0.3 seconds
+
+Commencing packet processing (pid=372)
+05/15-20:59:39.730078  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:60972 -> 192.168.178.81:5000
+05/15-20:59:39.941375  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33026 -> 192.168.178.81:5000
+05/15-20:59:40.135559  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33324 -> 192.168.178.81:5000
+05/15-20:59:40.333209  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33658 -> 192.168.178.81:5000
+05/15-20:59:40.526020  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33948 -> 192.168.178.81:5000
+05/15-20:59:40.723432  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34260 -> 192.168.178.81:5000
+05/15-20:59:40.930082  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34576 -> 192.168.178.81:5000
+05/15-20:59:41.132490  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34860 -> 192.168.178.81:5000
+05/15-20:59:41.331249  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35142 -> 192.168.178.81:5000
+05/15-20:59:41.522589  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35404 -> 192.168.178.81:5000
+05/15-20:59:41.715912  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35714 -> 192.168.178.81:5000
+05/15-20:59:41.917087  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35984 -> 192.168.178.81:5000
+05/15-20:59:42.100375  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:36284 -> 192.168.178.81:5000
+05/15-20:59:42.280591  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:36570 -> 192.168.178.81:5000
+05/15-20:59:42.465339  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:36872 -> 192.168.178.81:5000
+05/15-20:59:42.639224  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:37164 -> 192.168.178.81:5000
+05/15-20:59:42.823946  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:37448 -> 192.168.178.81:5000
+05/15-20:59:43.005291  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:37706 -> 192.168.178.81:5000
+05/15-20:59:43.182723  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:37986 -> 192.168.178.81:5000
+05/15-20:59:43.378880  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:38280 -> 192.168.178.81:5000
+05/15-20:59:43.542622  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:38546 -> 192.168.178.81:5000
+05/15-20:59:43.722816  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:38820 -> 192.168.178.81:5000
+05/15-20:59:43.894298  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:39062 -> 192.168.178.81:5000
+05/15-20:59:44.076314  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:39318 -> 192.168.178.81:5000
+05/15-20:59:44.259166  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:39606 -> 192.168.178.81:5000
+05/15-20:59:44.437706  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:39842 -> 192.168.178.81:5000
+05/15-20:59:44.620280  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:40112 -> 192.168.178.81:5000
+05/15-20:59:44.798771  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:40362 -> 192.168.178.81:5000
+05/15-20:59:44.981366  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:40644 -> 192.168.178.81:5000
+05/15-20:59:45.165478  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:55132 -> 192.168.178.81:5000
+05/15-20:59:45.344628  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:55424 -> 192.168.178.81:5000
+05/15-20:59:49.535678  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:60886 -> 192.168.178.81:5000
+05/15-20:59:49.540082  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33572 -> 192.168.178.81:5000
+05/15-20:59:49.544410  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34484 -> 192.168.178.81:5000
+05/15-20:59:49.548546  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35312 -> 192.168.178.81:5000
+05/15-20:59:59.529275  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33330 -> 192.168.178.81:5000
+05/15-20:59:59.534323  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34270 -> 192.168.178.81:5000
+05/15-20:59:59.539104  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35156 -> 192.168.178.81:5000
+05/15-21:00:09.523514  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33330 -> 192.168.178.81:5000
+05/15-21:00:09.527812  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34270 -> 192.168.178.81:5000
+05/15-21:00:09.532761  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35156 -> 192.168.178.81:5000
+05/15-21:00:19.519394  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33330 -> 192.168.178.81:5000
+05/15-21:00:19.523372  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34270 -> 192.168.178.81:5000
+05/15-21:00:19.527849  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35156 -> 192.168.178.81:5000
+05/15-21:00:29.514078  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33330 -> 192.168.178.81:5000
+05/15-21:00:29.516376  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34270 -> 192.168.178.81:5000
+05/15-21:00:29.520798  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35156 -> 192.168.178.81:5000
+05/15-21:00:39.509061  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33330 -> 192.168.178.81:5000
+05/15-21:00:39.515720  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34270 -> 192.168.178.81:5000
+05/15-21:00:39.519528  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35156 -> 192.168.178.81:5000
+05/15-21:00:49.505394  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33330 -> 192.168.178.81:5000
+05/15-21:00:49.507775  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34270 -> 192.168.178.81:5000
+05/15-21:00:49.510901  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35156 -> 192.168.178.81:5000
+05/15-21:00:59.501288  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33330 -> 192.168.178.81:5000
+05/15-21:00:59.505355  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34270 -> 192.168.178.81:5000
+05/15-21:00:59.512497  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35156 -> 192.168.178.81:5000
+05/15-21:01:09.499866  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33330 -> 192.168.178.81:5000
+05/15-21:01:09.502116  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34270 -> 192.168.178.81:5000
+05/15-21:01:09.507074  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35156 -> 192.168.178.81:5000
+05/15-21:01:19.491458  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33330 -> 192.168.178.81:5000
+05/15-21:01:19.495177  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34270 -> 192.168.178.81:5000
+05/15-21:01:19.504832  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35156 -> 192.168.178.81:5000
+05/15-21:01:29.483642  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33330 -> 192.168.178.81:5000
+05/15-21:01:29.487818  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34270 -> 192.168.178.81:5000
+05/15-21:01:29.490113  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35156 -> 192.168.178.81:5000
+05/15-21:01:39.478873  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33330 -> 192.168.178.81:5000
+05/15-21:01:39.483583  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34270 -> 192.168.178.81:5000
+05/15-21:01:39.487958  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35156 -> 192.168.178.81:5000
+05/15-21:01:49.476993  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33330 -> 192.168.178.81:5000
+05/15-21:01:49.479161  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34270 -> 192.168.178.81:5000
+05/15-21:01:49.482346  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35156 -> 192.168.178.81:5000
+05/15-21:01:59.470621  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33330 -> 192.168.178.81:5000
+05/15-21:01:59.474815  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34270 -> 192.168.178.81:5000
+05/15-21:01:59.482408  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35156 -> 192.168.178.81:5000
+05/15-21:02:09.465101  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33330 -> 192.168.178.81:5000
+05/15-21:02:09.468701  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34270 -> 192.168.178.81:5000
+05/15-21:02:09.472944  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35156 -> 192.168.178.81:5000
+05/15-21:02:19.458481  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33330 -> 192.168.178.81:5000
+05/15-21:02:19.462604  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34270 -> 192.168.178.81:5000
+05/15-21:02:19.466563  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35156 -> 192.168.178.81:5000
+05/15-21:02:29.456345  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33330 -> 192.168.178.81:5000
+05/15-21:02:29.461959  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34270 -> 192.168.178.81:5000
+05/15-21:02:29.467699  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35156 -> 192.168.178.81:5000
+05/15-21:02:39.449242  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33330 -> 192.168.178.81:5000
+05/15-21:02:39.452758  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34270 -> 192.168.178.81:5000
+05/15-21:02:39.456510  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35156 -> 192.168.178.81:5000
+05/15-21:02:49.446224  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33330 -> 192.168.178.81:5000
+05/15-21:02:49.451082  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34270 -> 192.168.178.81:5000
+05/15-21:02:49.456894  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35156 -> 192.168.178.81:5000
+05/15-21:02:59.442313  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33330 -> 192.168.178.81:5000
+05/15-21:02:59.449280  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34270 -> 192.168.178.81:5000
+05/15-21:02:59.451517  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35156 -> 192.168.178.81:5000
+05/15-21:03:09.435386  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33330 -> 192.168.178.81:5000
+05/15-21:03:09.438650  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34270 -> 192.168.178.81:5000
+05/15-21:03:09.441045  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35156 -> 192.168.178.81:5000
+05/15-21:03:19.430704  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33330 -> 192.168.178.81:5000
+05/15-21:03:19.433236  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34270 -> 192.168.178.81:5000
+05/15-21:03:19.436637  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35156 -> 192.168.178.81:5000
+05/15-21:03:29.425191  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33330 -> 192.168.178.81:5000
+05/15-21:03:29.428643  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34270 -> 192.168.178.81:5000
+05/15-21:03:29.431404  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35156 -> 192.168.178.81:5000
+05/15-21:03:39.420422  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33330 -> 192.168.178.81:5000
+05/15-21:03:39.423504  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34270 -> 192.168.178.81:5000
+05/15-21:03:39.426806  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35156 -> 192.168.178.81:5000
+05/15-21:03:40.418215  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:60886 -> 192.168.178.81:5000
+05/15-21:03:40.421141  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33572 -> 192.168.178.81:5000
+05/15-21:03:40.423342  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34484 -> 192.168.178.81:5000
+05/15-21:03:40.426730  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35312 -> 192.168.178.81:5000
+05/15-21:03:41.508773  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33706 -> 192.168.178.81:5000
+05/15-21:03:41.533645  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33484 -> 192.168.178.81:5000
+05/15-21:03:41.563239  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35286 -> 192.168.178.81:5000
+05/15-21:03:41.596504  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35174 -> 192.168.178.81:5000
+05/15-21:03:41.634582  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33708 -> 192.168.178.81:5000
+05/15-21:03:41.657146  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35482 -> 192.168.178.81:5000
+05/15-21:03:41.691499  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:35224 -> 192.168.178.81:5000
+05/15-21:03:41.718980  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33342 -> 192.168.178.81:5000
+05/15-21:03:41.739634  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34002 -> 192.168.178.81:5000
+05/15-21:03:41.771295  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33176 -> 192.168.178.81:5000
+05/15-21:03:41.790836  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34230 -> 192.168.178.81:5000
+05/15-21:03:41.813604  [**] [1:40000056:2] FLASK HTTP Flood Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33164 -> 192.168.178.81:5000
+^C*** Caught Int-Signal
+===============================================================================
+Run time for packet processing was 278.27138 seconds
+Snort processed 44702 packets.
+Snort ran for 0 days 0 hours 4 minutes 38 seconds
+   Pkts/min:        11175
+   Pkts/sec:          160
+===============================================================================
+Memory usage summary:
+  Total non-mmapped bytes (arena):       6901760
+  Bytes in mapped regions (hblkhd):      16240640
+  Total allocated space (uordblks):      3578320
+  Total free space (fordblks):           3323440
+  Topmost releasable block (keepcost):   94560
+===============================================================================
+Packet I/O Totals:
+   Received:        44746
+   Analyzed:        44702 ( 99.902%)
+    Dropped:            0 (  0.000%)
+   Filtered:            0 (  0.000%)
+Outstanding:           44 (  0.098%)
+   Injected:            0
+===============================================================================
+Breakdown by protocol (includes rebuilt packets):
+        Eth:        44702 (100.000%)
+       VLAN:            0 (  0.000%)
+        IP4:        41311 ( 92.414%)
+       Frag:            0 (  0.000%)
+       ICMP:            0 (  0.000%)
+        UDP:         1243 (  2.781%)
+        TCP:        39925 ( 89.314%)
+        IP6:         1744 (  3.901%)
+    IP6 Ext:         1936 (  4.331%)
+   IP6 Opts:          192 (  0.430%)
+      Frag6:            0 (  0.000%)
+      ICMP6:         1064 (  2.380%)
+       UDP6:          680 (  1.521%)
+       TCP6:            0 (  0.000%)
+     Teredo:            0 (  0.000%)
+    ICMP-IP:            0 (  0.000%)
+    IP4/IP4:            0 (  0.000%)
+    IP4/IP6:            0 (  0.000%)
+    IP6/IP4:            0 (  0.000%)
+    IP6/IP6:            0 (  0.000%)
+        GRE:            0 (  0.000%)
+    GRE Eth:            0 (  0.000%)
+   GRE VLAN:            0 (  0.000%)
+    GRE IP4:            0 (  0.000%)
+    GRE IP6:            0 (  0.000%)
+GRE IP6 Ext:            0 (  0.000%)
+   GRE PPTP:            0 (  0.000%)
+    GRE ARP:            0 (  0.000%)
+    GRE IPX:            0 (  0.000%)
+   GRE Loop:            0 (  0.000%)
+       MPLS:            0 (  0.000%)
+        ARP:            3 (  0.007%)
+        IPX:            0 (  0.000%)
+   Eth Loop:            0 (  0.000%)
+   Eth Disc:            0 (  0.000%)
+   IP4 Disc:            0 (  0.000%)
+   IP6 Disc:            0 (  0.000%)
+   TCP Disc:            0 (  0.000%)
+   UDP Disc:            0 (  0.000%)
+  ICMP Disc:            0 (  0.000%)
+All Discard:            0 (  0.000%)
+      Other:         1787 (  3.998%)
+Bad Chk Sum:        25333 ( 56.671%)
+    Bad TTL:            0 (  0.000%)
+     S5 G 1:            0 (  0.000%)
+     S5 G 2:            0 (  0.000%)
+      Total:        44702
+===============================================================================
+Action Stats:
+     Alerts:          120 (  0.268%)
+     Logged:          120 (  0.268%)
+     Passed:            0 (  0.000%)
+Limits:
+      Match:            0
+      Queue:            0
+        Log:            0
+      Event:        13977
+      Alert:            0
+Verdicts:
+      Allow:        44702 ( 99.902%)
+      Block:            0 (  0.000%)
+    Replace:            0 (  0.000%)
+  AllowFlow:            0 (  0.000%)
+  BlockFlow:            0 (  0.000%)
+     Ignore:            0 (  0.000%)
+      Retry:            0 (  0.000%)
+===============================================================================
+Frag3 statistics:
+        Total Fragments: 0
+      Frags Reassembled: 0
+               Discards: 0
+          Memory Faults: 0
+               Timeouts: 0
+               Overlaps: 0
+              Anomalies: 0
+                 Alerts: 0
+                  Drops: 0
+     FragTrackers Added: 0
+    FragTrackers Dumped: 0
+FragTrackers Auto Freed: 0
+    Frag Nodes Inserted: 0
+     Frag Nodes Deleted: 0
+===============================================================================
+===============================================================================
+Stream statistics:
+            Total sessions: 1380
+              TCP sessions: 1100
+       Active TCP sessions: 0
+  Non mempool TCP sess mem: 0
+          TCP mempool used: 51785830044855808
+              UDP sessions: 280
+       Active UDP sessions: 280
+          UDP mempool used: 51786551599361536
+             ICMP sessions: 0
+      Active ICMP sessions: 0
+         ICMP mempool used: 51786568779230720
+               IP sessions: 0
+        Active IP sessions: 0
+           IP mempool used: 51786585959099904
+                TCP Prunes: 0
+                UDP Prunes: 0
+               ICMP Prunes: 0
+                 IP Prunes: 0
+TCP StreamTrackers Created: 1100
+TCP StreamTrackers Deleted: 1100
+              TCP Timeouts: 0
+              TCP Overlaps: 0
+       TCP Segments Queued: 871
+     TCP Segments Released: 871
+       TCP Rebuilt Packets: 0
+         TCP Segments Used: 0
+              TCP Discards: 1732
+                  TCP Gaps: 0
+      UDP Sessions Created: 280
+      UDP Sessions Deleted: 280
+              UDP Timeouts: 0
+              UDP Discards: 0
+     ICMP Dest unreachable: 0
+ ICMP Fragmentation needed: 0
+                    Events: 2053
+           Internal Events: 0
+           TCP Port Filter
+                  Filtered: 0
+                 Inspected: 0
+                   Tracked: 14594
+           UDP Port Filter
+                  Filtered: 0
+                 Inspected: 0
+                   Tracked: 280
+===============================================================================
+HTTP Inspect - encodings (Note: stream-reassembled packets included):
+    POST methods:                         0
+    GET methods:                          0
+    HTTP Request Headers extracted:       0
+    HTTP Request Cookies extracted:       0
+    Post parameters extracted:            0
+    HTTP response Headers extracted:      0
+    HTTP Response Cookies extracted:      0
+    Unicode:                              0
+    Double unicode:                       0
+    Non-ASCII representable:              0
+    Directory traversals:                 0
+    Extra slashes ("//"):                 0
+    Self-referencing paths ("./"):        0
+    HTTP Response Gzip packets extracted: 0
+    Gzip Compressed Data Processed:       n/a
+    Gzip Decompressed Data Processed:     n/a
+    Http/2 Rebuilt Packets:               0
+    Total packets processed:              25
+    Non-mempool session memory:           0
+    http_mempool used:                    2610097668436323840
+    hi_gzip_mempool used:                 2610097668436323840
+    mime_decode_mempool used:             2610097668436323840
+    mime_log_mempool used:                2610097668436323840
+    Current active session:               0
+===============================================================================
+FTPTelnet Preprocessor Statistics
+  Current active FTP sessions                   : 0
+  Max concurrent FTP sessions                   : 0
+  Total FTP Data sessions                       : 0
+  Max concurrent FTP Data sessions              : 0
+  Current active Telnet sessions                : 0
+  Max concurrent Telnet sessions                : 0
+  Current ftp_telnet session non-mempool memory : 0
+===============================================================================
+SMTP Preprocessor Statistics
+  Total sessions                                    : 0
+  Max concurrent sessions                           : 0
+===============================================================================
+dcerpc2 Preprocessor Statistics
+  Total sessions: 0
+ Active sessions: 0
+
+  Memory stats (bytes)
+    Current total: 52428800
+    Maximum total: 52515564
+    Current runtime total: 52428800
+    Maximum runtime total: 52428800
+    Current config total: 0
+    Maximum config total: 82292
+    Current rule options total: 0
+    Maximum rule options total: 0
+    Current routing table total: 0
+    Maximum routing table total: 0
+    Current initialization total: 0
+    Maximum initialization total: 4512
+===============================================================================
+===============================================================================
+SIP Preprocessor Statistics
+  Total sessions: 0
+===============================================================================
+IMAP Preprocessor Statistics
+  Total sessions                                    : 0
+  Max concurrent sessions                           : 0
+===============================================================================
+POP Preprocessor Statistics
+  Total sessions                                    : 0
+  Max concurrent sessions                           : 0
+===============================================================================
+
+Memory Statistics of DNS at: Mon May 15 21:04:01 2023
+
+
+Heap Statistics of dns:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              1
+                 No of frees:              1
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              1
+                 No of frees:              1
+===============================================================================
+
+Memory Statistics of Frag3 on: Mon May 15 21:04:01 2023
+
+    Memory in use         : 0
+    prealloc nodes in use : 0
+
+
+Heap Statistics of frag:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              3
+                 No of frees:              3
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              3
+                 No of frees:              3
+===============================================================================
+
+Memory Statistics of FTPTelnet at: Mon May 15 21:04:01 2023
+
+       Current active FTP sessions :    0
+       Max concurrent FTP sessions :    0
+           Total FTP Data sessions :    0
+  Max concurrent FTP Data sessions :    0
+    Current active Telnet sessions :    0
+    Max concurrent Telnet sessions :    0
+
+Heap Statistics of ftptelnet:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:            622
+                 No of frees:            622
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:            622
+                 No of frees:            622
+===============================================================================
+ Memory Statistics of Http Inspect on: Mon May 15 21:04:01 2023
+
+     Current active session          : 0
+    No of POST methods encountered  : 0
+    No of GET methods encountered   : 0
+    No of successfully extract post params      : 0
+    No of successfully extract request params   : 0
+    No of successfully extract response params  : 0
+ Http Memory Pool       :
+      Free Memory:                 0 bytes
+      Used Memory:                 0 bytes
+      Max Memory :                 0 bytes
+ Mime Decode Memory Pool   :
+      Free Memory:                 0 bytes
+      Used Memory:                 0 bytes
+      Max Memory :                 0 bytes
+ Http Gzip Memory Pool     :
+      Free Memory:                 0 bytes
+      Used Memory:                 0 bytes
+      Max Memory :                 0 bytes
+ Http Mime log Memory Pool :
+      Free Memory:                 0 bytes
+      Used Memory:                 0 bytes
+      Max Memory :                 0 bytes
+
+Heap Statistics of httpinspect:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              5
+                 No of frees:              5
+        Session Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              1
+                 No of frees:              1
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              3
+                 No of frees:              3
+        Mempool Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              1
+                 No of frees:              1
+===============================================================================
+SMTP Preprocessor Statistics
+  Total sessions                : 277448
+  Max concurrent sessions       : 277448
+  Current sessions              : 277448
+  SMTP Session
+     Used Memory  :             0
+     No of Allocs :             0
+     No of Frees  :             0
+  SMTP Config
+     Used Memory  :          9356
+     No of Allocs :            19
+     No of Frees  :            71
+   Total memory used :          9356
+
+Heap Statistics of smtp:
+          Total Statistics:
+               Memory in use:           9356 bytes
+                No of allocs:             19
+                 No of frees:             71
+         Config Statistics:
+               Memory in use:           9356 bytes
+                No of allocs:             19
+                 No of frees:             71
+===============================================================================
+
+Memory Statistics of Stream on: Mon May 15 21:04:01 2023
+
+Stream Session Statistics:
+            Total sessions: 1380
+              TCP sessions: 1100
+       Active TCP sessions: 0
+              UDP sessions: 280
+       Active UDP sessions: 280
+             ICMP sessions: 0
+      Active ICMP sessions: 0
+               IP sessions: 0
+        Active IP sessions: 0
+   TCP Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+   UDP Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+   ICMP Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+   IP Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+   Session Flow Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+
+Heap Statistics of stream:
+          Total Statistics:
+               Memory in use:        2072868 bytes
+                No of allocs:            884
+                 No of frees:            880
+        Session Statistics:
+               Memory in use:              0 bytes
+                No of allocs:            871
+                 No of frees:            871
+         Config Statistics:
+               Memory in use:        2072868 bytes
+                No of allocs:             13
+                 No of frees:              9
+===============================================================================
+
+Memory Statistics of DCE at: Mon May 15 21:04:01 2023
+
+dcerpc2 Preprocessor Statistics:
+                Total sessions :    0
+               Active sessions :    0
+            Total SMB sessions :    0
+            Total TCP sessions :    0
+            Total UDP sessions :    0
+    Total HTTP server sessions :    0
+     Total HTTP proxy sessions :    0
+Total Memory stats :
+                 Current total :    52428800
+                 Maximum total :    52515564
+                  Total memcap :    0
+                    Free total :    0
+SMB Memory stats :
+                 Current total :    52428800
+                 Maximum total :    52428800
+          Current session data :    52428800
+          Maximum session data :    52428800
+   Current segmentation buffer :    0
+   Maximum segmentation buffer :    0
+TCP Memory stats :
+                 Current total :    0
+                 Maximum total :    0
+          Current session data :    0
+          Maximum session data :    0
+UDP Memory stats :
+                 Current total :    0
+                 Maximum total :    0
+          Current session data :    0
+          Maximum session data :    0
+HTTP Memory stats :
+                 Current total :    0
+                 Maximum total :    0
+          Current session data :    0
+          Maximum session data :    0
+
+Heap Statistics of dce:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:            115
+                 No of frees:            115
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:            115
+                 No of frees:            115
+===============================================================================
+
+Memory Statistics of SIP on: Mon May 15 21:04:01 2023
+
+    Total Sessions          : 277448
+    Current Active Sessions : 0
+
+
+Heap Statistics of sip:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:             22
+                 No of frees:             22
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:             22
+                 No of frees:             22
+===============================================================================
+POP Preprocessor Statistics
+  Total sessions                : 277448
+  Max concurrent sessions       : 277448
+  Current sessions              : 277448
+  POP Session
+     Used Memory  :             0
+     No of Allocs :             0
+     No of Frees  :             0
+  POP Config
+     Used Memory  :           277
+     No of Allocs :             3
+     No of Frees  :            18
+   Total memory used :           277
+
+Heap Statistics of pop:
+          Total Statistics:
+               Memory in use:            277 bytes
+                No of allocs:              3
+                 No of frees:             18
+         Config Statistics:
+               Memory in use:            277 bytes
+                No of allocs:              3
+                 No of frees:             18
+===============================================================================
+IMAP Preprocessor Statistics
+  Total sessions                : 277448
+  Max concurrent sessions       : 277448
+  Current sessions              : 277448
+  IMAP Session
+     Used Memory  :             0
+     No of Allocs :             0
+     No of Frees  :             0
+  IMAP Config
+     Used Memory  :           847
+     No of Allocs :             3
+     No of Frees  :            48
+   Total memory used :           847
+
+Heap Statistics of imap:
+          Total Statistics:
+               Memory in use:            847 bytes
+                No of allocs:              3
+                 No of frees:             48
+         Config Statistics:
+               Memory in use:            847 bytes
+                No of allocs:              3
+                 No of frees:             48
+===============================================================================
+
+Memory Statistics for File at:Mon May 15 21:04:01 2023
+
+Total buffers allocated:           0
+Total buffers freed:               0
+Total buffers released:            0
+Total file mempool:                0
+Total allocated file mempool:      0
+Total freed file mempool:          0
+Total released file mempool:       0
+
+Heap Statistics of file:
+          Total Statistics:
+               Memory in use:            140 bytes
+                No of allocs:              6
+                 No of frees:              1
+        Session Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              1
+                 No of frees:              1
+        Mempool Statistics:
+               Memory in use:            140 bytes
+                No of allocs:              5
+                 No of frees:              0
+===============================================================================
++-----------------------[filtered events]--------------------------------------
+| gen-id=1      sig-id=40000056   type=Threshold tracking=src count=100 seconds=10  filtered=13977
+Snort exiting

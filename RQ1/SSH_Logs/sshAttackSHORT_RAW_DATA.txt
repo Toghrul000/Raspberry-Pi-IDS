@@ -1,0 +1,1171 @@
+Attacker:
+
+
+┌──(kali㉿kali)-[~]
+└─$ sudo ./datetime.sh sudo  hydra -l pi -P piPass2.txt ssh://192.168.178.81
+
+[sudo] password for kali:
+Timestamp START: 05/15-23:32:46.561211557
+Hydra v9.4 (c) 2022 by van Hauser/THC & David Maciejak - Please do not use in military nd ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2023-05-15 23:32:46
+[WARNING] Many SSH configurations limit the number of parallel tasks, it is recommended
+[WARNING] Restorefile (you have 10 seconds to abort... (use option -I to skip waiting))
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 1000 login tries (l:1/p:1000), ~63
+[DATA] attacking ssh://192.168.178.81:22/
+[STATUS] 120.00 tries/min, 120 tries in 00:01h, 883 to do in 00:08h, 13 active
+[STATUS] 92.00 tries/min, 276 tries in 00:03h, 727 to do in 00:08h, 13 active
+[STATUS] 85.86 tries/min, 601 tries in 00:07h, 402 to do in 00:05h, 13 active
+[22][ssh] host: 192.168.178.81   login: pi   password: 25879
+1 of 1 target successfully completed, 1 valid password found
+[WARNING] Writing restore file because 3 final worker threads did not complete un      til end.
+[ERROR] 3 targets did not resolve or could not be connected
+[ERROR] 0 target did not complete
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2023-05-15 23:43:3      2
+Timestamp END: 05/15-23:43:32.476090351
+
+
+
+
+
+
+
+
+
+Defender:
+
+
+pi@tpi:~/projects/ThesisProject $ sudo snort -A console -c /etc/snort/snort.conf -i eth0 -l ./Logs/sshAttack/
+Running in IDS mode
+
+        --== Initializing Snort ==--
+Initializing Output Plugins!
+Initializing Preprocessors!
+Initializing Plug-ins!
+Parsing Rules file "/etc/snort/snort.conf"
+PortVar 'HTTP_PORTS' defined :  [ 80:81 311 383 591 593 901 1220 1414 1741 1830 2301 2381 2809 3037 3128 3702 4343 4848 5000 5250 6988 7000:7001 7144:7145 7510 7777 7779 8000 8008 8014 8028 8080 8085 8088 8090 8118 8123 8180:8181 8243 8280 8300 8800 8888 8899 9000 9060 9080 9090:9091 9443 9999 11371 34443:34444 41080 50002 55555 ]
+PortVar 'SHELLCODE_PORTS' defined :  [ 0:79 81:65535 ]
+PortVar 'ORACLE_PORTS' defined :  [ 1024:65535 ]
+PortVar 'SSH_PORTS' defined :  [ 22 ]
+PortVar 'FTP_PORTS' defined :  [ 21 2100 3535 ]
+PortVar 'SIP_PORTS' defined :  [ 5060:5061 5600 ]
+PortVar 'FILE_DATA_PORTS' defined :  [ 80:81 110 143 311 383 591 593 901 1220 1414 1741 1830 2301 2381 2809 3037 3128 3702 4343 4848 5000 5250 6988 7000:7001 7144:7145 7510 7777 7779 8000 8008 8014 8028 8080 8085 8088 8090 8118 8123 8180:8181 8243 8280 8300 8800 8888 8899 9000 9060 9080 9090:9091 9443 9999 11371 34443:34444 41080 50002 55555 ]
+PortVar 'GTP_PORTS' defined :  [ 2123 2152 3386 ]
+Detection:
+   Search-Method = AC-Full-Q
+    Split Any/Any group = enabled
+    Search-Method-Optimizations = enabled
+    Maximum pattern length = 20
+Tagged Packet Limit: 256
+Loading dynamic engine /usr/lib/snort/snort_dynamicengine/libsf_engine.so... done
+Loading all dynamic detection libs from /usr/lib/snort/snort_dynamicrules...
+WARNING: No dynamic libraries found in directory /usr/lib/snort/snort_dynamicrules.
+  Finished Loading all dynamic detection libs from /usr/lib/snort/snort_dynamicrules
+Loading all dynamic preprocessor libs from /usr/lib/snort/snort_dynamicpreprocessor/...
+  Loading dynamic preprocessor library /usr/lib/snort/snort_dynamicpreprocessor//libsf_ssh_preproc.so... done
+  Loading dynamic preprocessor library /usr/lib/snort/snort_dynamicpreprocessor//libsf_pop_preproc.so... done
+  Loading dynamic preprocessor library /usr/lib/snort/snort_dynamicpreprocessor//libsf_sip_preproc.so... done
+  Loading dynamic preprocessor library /usr/lib/snort/snort_dynamicpreprocessor//libsf_sdf_preproc.so... done
+  Loading dynamic preprocessor library /usr/lib/snort/snort_dynamicpreprocessor//libsf_s7commplus_preproc.so... done
+  Loading dynamic preprocessor library /usr/lib/snort/snort_dynamicpreprocessor//libsf_ssl_preproc.so... done
+  Loading dynamic preprocessor library /usr/lib/snort/snort_dynamicpreprocessor//libsf_modbus_preproc.so... done
+  Loading dynamic preprocessor library /usr/lib/snort/snort_dynamicpreprocessor//libsf_appid_preproc.so... done
+  Loading dynamic preprocessor library /usr/lib/snort/snort_dynamicpreprocessor//libsf_dce2_preproc.so... done
+  Loading dynamic preprocessor library /usr/lib/snort/snort_dynamicpreprocessor//libsf_dns_preproc.so... done
+  Loading dynamic preprocessor library /usr/lib/snort/snort_dynamicpreprocessor//libsf_dnp3_preproc.so... done
+  Loading dynamic preprocessor library /usr/lib/snort/snort_dynamicpreprocessor//libsf_reputation_preproc.so... done
+  Loading dynamic preprocessor library /usr/lib/snort/snort_dynamicpreprocessor//libsf_smtp_preproc.so... done
+  Loading dynamic preprocessor library /usr/lib/snort/snort_dynamicpreprocessor//libsf_gtp_preproc.so... done
+  Loading dynamic preprocessor library /usr/lib/snort/snort_dynamicpreprocessor//libsf_ftptelnet_preproc.so... done
+  Loading dynamic preprocessor library /usr/lib/snort/snort_dynamicpreprocessor//libsf_imap_preproc.so... done
+  Finished Loading all dynamic preprocessor libs from /usr/lib/snort/snort_dynamicpreprocessor/
+Log directory = ./Logs/sshAttack/
+WARNING: ip4 normalizations disabled because not inline.
+WARNING: tcp normalizations disabled because not inline.
+WARNING: icmp4 normalizations disabled because not inline.
+WARNING: ip6 normalizations disabled because not inline.
+WARNING: icmp6 normalizations disabled because not inline.
+Frag3 global config:
+    Max frags: 65536
+    Fragment memory cap: 4194304 bytes
+Frag3 engine config:
+    Bound Address: default
+    Target-based policy: WINDOWS
+    Fragment timeout: 180 seconds
+    Fragment min_ttl:   1
+    Fragment Anomalies: Alert
+    Overlap Limit:     10
+    Min fragment Length:     100
+      Max Expected Streams: 768
+Stream global config:
+    Track TCP sessions: ACTIVE
+    Max TCP sessions: 262144
+    TCP cache pruning timeout: 30 seconds
+    TCP cache nominal timeout: 3600 seconds
+    Memcap (for reassembly packet storage): 8388608
+    Track UDP sessions: ACTIVE
+    Max UDP sessions: 131072
+    UDP cache pruning timeout: 30 seconds
+    UDP cache nominal timeout: 180 seconds
+    Track ICMP sessions: INACTIVE
+    Track IP sessions: INACTIVE
+    Log info if session memory consumption exceeds 1048576
+    Send up to 2 active responses
+    Wait at least 5 seconds between responses
+    Protocol Aware Flushing: ACTIVE
+        Maximum Flush Point: 16000
+Stream TCP Policy config:
+    Bound Address: default
+    Reassembly Policy: WINDOWS
+    Timeout: 180 seconds
+    Limit on TCP Overlaps: 10
+    Maximum number of bytes to queue per session: 1048576
+    Maximum number of segs to queue per session: 2621
+    Options:
+        Require 3-Way Handshake: YES
+        3-Way Handshake Timeout: 180
+        Detect Anomalies: YES
+    Reassembly Ports:
+      21 client (Footprint)
+      22 client (Footprint)
+      23 client (Footprint)
+      25 client (Footprint)
+      42 client (Footprint)
+      53 client (Footprint)
+      79 client (Footprint)
+      80 client (Footprint) server (Footprint)
+      81 client (Footprint) server (Footprint)
+      109 client (Footprint)
+      110 client (Footprint)
+      111 client (Footprint)
+      113 client (Footprint)
+      119 client (Footprint)
+      135 client (Footprint)
+      136 client (Footprint)
+      137 client (Footprint)
+      139 client (Footprint)
+      143 client (Footprint)
+      161 client (Footprint)
+      additional ports configured but not printed.
+Stream UDP Policy config:
+    Timeout: 180 seconds
+HttpInspect Config:
+    GLOBAL CONFIG
+      Detect Proxy Usage:       NO
+      IIS Unicode Map Filename: /etc/snort/unicode.map
+      IIS Unicode Map Codepage: 1252
+      Memcap used for logging URI and Hostname: 150994944
+      Max Gzip Memory: 104857600
+      Max Gzip Sessions: 315836
+      Gzip Compress Depth: 65535
+      Gzip Decompress Depth: 65535
+      Normalize Random Nulls in Text: NO
+    DEFAULT SERVER CONFIG:
+      Server profile: All
+      Ports (PAF): 80 81 311 383 591 593 901 1220 1414 1741 1830 2301 2381 2809 3037 3128 3702 4343 4848 5250 6988 7000 7001 7144 7145 7510 7777 7779 8000 8008 8014 8028 8080 8085 8088 8090 8118 8123 8180 8181 8243 8280 8300 8800 8888 8899 9000 9060 9080 9090 9091 9443 9999 11371 34443 34444 41080 50002 55555
+      Server Flow Depth: 0
+      Client Flow Depth: 0
+      Max Chunk Length: 500000
+      Small Chunk Length Evasion: chunk size <= 10, threshold >= 5 times
+      Max Header Field Length: 750
+      Max Number Header Fields: 100
+      Max Number of WhiteSpaces allowed with header folding: 200
+      Inspect Pipeline Requests: YES
+      URI Discovery Strict Mode: NO
+      Allow Proxy Usage: NO
+      Disable Alerting: NO
+      Oversize Dir Length: 500
+      Only inspect URI: NO
+      Normalize HTTP Headers: NO
+      Inspect HTTP Cookies: YES
+      Inspect HTTP Responses: YES
+      Extract Gzip from responses: YES
+      Decompress response files:
+      Unlimited decompression of gzip data from responses: YES
+      Normalize Javascripts in HTTP Responses: YES
+      Max Number of WhiteSpaces allowed with Javascript Obfuscation in HTTP responses: 200
+      Normalize HTTP Cookies: NO
+      Enable XFF and True Client IP: NO
+      Log HTTP URI data: NO
+      Log HTTP Hostname data: NO
+      Extended ASCII code support in URI: NO
+      Ascii: YES alert: NO
+      Double Decoding: YES alert: NO
+      %U Encoding: YES alert: YES
+      Bare Byte: YES alert: NO
+      UTF 8: YES alert: NO
+      IIS Unicode: YES alert: NO
+      Multiple Slash: YES alert: NO
+      IIS Backslash: YES alert: NO
+      Directory Traversal: YES alert: NO
+      Web Root Traversal: YES alert: NO
+      Apache WhiteSpace: YES alert: NO
+      IIS Delimiter: YES alert: NO
+      IIS Unicode Map: GLOBAL IIS UNICODE MAP CONFIG
+      Non-RFC Compliant Characters: 0x00 0x01 0x02 0x03 0x04 0x05 0x06 0x07
+      Whitespace Characters: 0x09 0x0b 0x0c 0x0d
+      Legacy mode: NO
+rpc_decode arguments:
+    Ports to decode RPC on: 111 32770 32771 32772 32773 32774 32775 32776 32777 32778 32779
+    alert_fragments: INACTIVE
+    alert_large_fragments: INACTIVE
+    alert_incomplete: INACTIVE
+    alert_multiple_requests: INACTIVE
+FTPTelnet Config:
+    GLOBAL CONFIG
+      Inspection Type: stateful
+      Check for Encrypted Traffic: YES alert: NO
+      Continue to check encrypted data: YES
+    TELNET CONFIG:
+      Ports: 23
+      Are You There Threshold: 20
+      Normalize: YES
+      Detect Anomalies: YES
+    FTP CONFIG:
+      FTP Server: default
+        Ports (PAF): 21 2100 3535
+        Check for Telnet Cmds: YES alert: YES
+        Ignore Telnet Cmd Operations: YES alert: YES
+        Ignore open data channels: NO
+      FTP Client: default
+        Check for Bounce Attacks: YES alert: YES
+        Check for Telnet Cmds: YES alert: YES
+        Ignore Telnet Cmd Operations: YES alert: YES
+        Max Response Length: 256
+SMTP Config:
+    Ports: 25 465 587 691
+    Inspection Type: Stateful
+    Normalize: ATRN AUTH BDAT DATA DEBUG EHLO EMAL ESAM ESND ESOM ETRN EVFY EXPN HELO HELP IDENT MAIL NOOP ONEX QUEU QUIT RCPT RSET SAML SEND STARTTLS SOML TICK TIME TURN TURNME VERB VRFY X-EXPS XADR XAUTH XCIR XEXCH50 XGEN XLICENSE X-LINK2STATE XQUE XSTA XTRN XUSR CHUNKING X-ADAT X-DRCP X-ERCP X-EXCH50
+    Ignore Data: No
+    Ignore TLS Data: No
+    Ignore SMTP Alerts: No
+    Max Command Line Length: 512
+    Max auth Command Line Length: 1000
+    Max Specific Command Line Length:
+       ATRN:255 AUTH:246 BDAT:255 DATA:246 DEBUG:255
+       EHLO:500 EMAL:255 ESAM:255 ESND:255 ESOM:255
+       ETRN:246 EVFY:255 EXPN:255 HELO:500 HELP:500
+       IDENT:255 MAIL:260 NOOP:255 ONEX:246 QUEU:246
+       QUIT:246 RCPT:300 RSET:246 SAML:246 SEND:246
+       SIZE:255 STARTTLS:246 SOML:246 TICK:246 TIME:246
+       TURN:246 TURNME:246 VERB:246 VRFY:255 X-EXPS:246
+       XADR:246 XAUTH:246 XCIR:246 XEXCH50:246 XGEN:246
+       XLICENSE:246 X-LINK2STATE:246 XQUE:246 XSTA:246 XTRN:246
+       XUSR:246
+    Max Header Line Length: 1000
+    Max Response Line Length: 512
+    X-Link2State Alert: Yes
+    Drop on X-Link2State Alert: No
+    Alert on commands: None
+    Alert on unknown commands: No
+    SMTP Memcap: 838860
+    MIME Max Mem: 838860
+    Base64 Decoding: Enabled
+    Base64 Decoding Depth: Unlimited
+    Quoted-Printable Decoding: Enabled
+    Quoted-Printable Decoding Depth: Unlimited
+    Unix-to-Unix Decoding: Enabled
+    Unix-to-Unix Decoding Depth: Unlimited
+    Non-Encoded MIME attachment Extraction: Enabled
+    Non-Encoded MIME attachment Extraction Depth: Unlimited
+    Log Attachment filename: Enabled
+    Log MAIL FROM Address: Enabled
+    Log RCPT TO Addresses: Enabled
+    Log Email Headers: Enabled
+    Email Hdrs Log Depth: 1464
+SSH config:
+    Autodetection: ENABLED
+    Challenge-Response Overflow Alert: ENABLED
+    SSH1 CRC32 Alert: ENABLED
+    Server Version String Overflow Alert: ENABLED
+    Protocol Mismatch Alert: ENABLED
+    Bad Message Direction Alert: DISABLED
+    Bad Payload Size Alert: DISABLED
+    Unrecognized Version Alert: DISABLED
+    Max Encrypted Packets: 20
+    Max Server Version String Length: 100
+    MaxClientBytes: 19600 (Default)
+    Ports:
+        22
+DCE/RPC 2 Preprocessor Configuration
+  Global Configuration
+    DCE/RPC Defragmentation: Enabled
+    Memcap: 102400 KB
+    Events: co
+    SMB Fingerprint policy: Disabled
+  Server Default Configuration
+    Policy: WinXP
+    Detect ports (PAF)
+      SMB: 139 445
+      TCP: 135
+      UDP: 135
+      RPC over HTTP server: 593
+      RPC over HTTP proxy: None
+    Autodetect ports (PAF)
+      SMB: None
+      TCP: 1025-65535
+      UDP: 1025-65535
+      RPC over HTTP server: 1025-65535
+      RPC over HTTP proxy: None
+    Invalid SMB shares: C$ D$ ADMIN$
+    Maximum SMB command chaining: 3 commands
+    SMB file inspection: Disabled
+DNS config:
+    DNS Client rdata txt Overflow Alert: ACTIVE
+    Obsolete DNS RR Types Alert: INACTIVE
+    Experimental DNS RR Types Alert: INACTIVE
+    Ports: 53
+SSLPP config:
+    Encrypted packets: not inspected
+    Ports:
+      443      465      563      636      989
+      992      993      994      995     7801
+     7802     7900     7901     7902     7903
+     7904     7905     7906     7907     7908
+     7909     7910     7911     7912     7913
+     7914     7915     7916     7917     7918
+     7919     7920
+    Server side data is trusted
+    Maximum SSL Heartbeat length: 0
+Sensitive Data preprocessor config:
+    Global Alert Threshold: 25
+    Masked Output: DISABLED
+SIP config:
+    Max number of sessions: 40000
+    Max number of dialogs in a session: 4 (Default)
+    Status: ENABLED
+    Ignore media channel: DISABLED
+    Max URI length: 512
+    Max Call ID length: 80
+    Max Request name length: 20 (Default)
+    Max From length: 256 (Default)
+    Max To length: 256 (Default)
+    Max Via length: 1024 (Default)
+    Max Contact length: 512
+    Max Content length: 2048
+    Ports:
+        5060    5061    5600
+    Methods:
+          invite cancel ack bye register options refer subscribe update join info message notify benotify do qauth sprack publish service unsubscribe prack
+IMAP Config:
+    Ports: 143
+    IMAP Memcap: 838860
+    MIME Max Mem: 838860
+    Base64 Decoding: Enabled
+    Base64 Decoding Depth: Unlimited
+    Quoted-Printable Decoding: Enabled
+    Quoted-Printable Decoding Depth: Unlimited
+    Unix-to-Unix Decoding: Enabled
+    Unix-to-Unix Decoding Depth: Unlimited
+    Non-Encoded MIME attachment Extraction: Enabled
+    Non-Encoded MIME attachment Extraction Depth: Unlimited
+POP Config:
+    Ports: 110
+    POP Memcap: 838860
+    MIME Max Mem: 838860
+    Base64 Decoding: Enabled
+    Base64 Decoding Depth: Unlimited
+    Quoted-Printable Decoding: Enabled
+    Quoted-Printable Decoding Depth: Unlimited
+    Unix-to-Unix Decoding: Enabled
+    Unix-to-Unix Decoding Depth: Unlimited
+    Non-Encoded MIME attachment Extraction: Enabled
+    Non-Encoded MIME attachment Extraction Depth: Unlimited
+Modbus config:
+    Ports:
+        502
+DNP3 config:
+    Memcap: 262144
+    Check Link-Layer CRCs: ENABLED
+    Ports:
+        20000
+
++++++++++++++++++++++++++++++++++++++++++++++++++++
+Initializing rule chains...
+WARNING: /etc/snort/rules/local.rules(33) GID 1 SID 491 in rule duplicates previous rule. Ignoring old rule.
+
+WARNING: /etc/snort/rules/local.rules(44) threshold (in rule) is deprecated; use detection_filter instead.
+
+11 Snort rules read
+    9 detection rules
+    0 decoder rules
+    1 preprocessor rules
+10 Option Chains linked into 8 Chain Headers
++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++-------------------[Rule Port Counts]---------------------------------------
+|             tcp     udp    icmp      ip
+|     src       0       0       0       0
+|     dst       5       0       0       0
+|     any       5       0       1       0
+|      nc       3       0       1       0
+|     s+d       0       0       0       0
++----------------------------------------------------------------------------
+
++-----------------------[detection-filter-config]------------------------------
+| memory-cap : 1048576 bytes
++-----------------------[detection-filter-rules]-------------------------------
+-------------------------------------------------------------------------------
+
++-----------------------[rate-filter-config]-----------------------------------
+| memory-cap : 1048576 bytes
++-----------------------[rate-filter-rules]------------------------------------
+| none
+-------------------------------------------------------------------------------
+
++-----------------------[event-filter-config]----------------------------------
+| memory-cap : 1048576 bytes
++-----------------------[event-filter-global]----------------------------------
+| none
++-----------------------[event-filter-local]-----------------------------------
+| gen-id=1      sig-id=40000056   type=Threshold tracking=src count=100 seconds=10
+| gen-id=1      sig-id=1          type=Limit     tracking=src count=1   seconds=5
+| gen-id=1      sig-id=1000003243 type=Threshold tracking=src count=100 seconds=10
+| gen-id=1      sig-id=10000125   type=Threshold tracking=src count=1000 seconds=240
++-----------------------[suppression]------------------------------------------
+| none
+-------------------------------------------------------------------------------
+Rule application order: pass->drop->sdrop->reject->alert->log
+Verifying Preprocessor Configurations!
+
+[ Port Based Pattern Matching Memory ]
++- [ Aho-Corasick Summary ] -------------------------------------
+| Storage Format    : Full-Q
+| Finite Automaton  : DFA
+| Alphabet Size     : 256 Chars
+| Sizeof State      : Variable (1,2,4 bytes)
+| Instances         : 4
+|     1 byte states : 4
+|     2 byte states : 0
+|     4 byte states : 0
+| Characters        : 54
+| States            : 54
+| Transitions       : 123
+| State Density     : 0.9%
+| Patterns          : 6
+| Match States      : 6
+| Memory (KB)       : 22.99
+|   Pattern         : 0.39
+|   Match Lists     : 0.51
+|   DFA
+|     1 byte states : 13.82
+|     2 byte states : 0.00
+|     4 byte states : 0.00
++----------------------------------------------------------------
+[ Number of patterns truncated to 20 bytes: 1 ]
+pcap DAQ configured to passive.
+Acquiring network traffic from "eth0".
+Reload thread starting...
+Reload thread started, thread 0xb4c0f440 (23139)
+Decoding Ethernet
+
+        --== Initialization Complete ==--
+
+   ,,_     -*> Snort! <*-
+  o"  )~   Version 2.9.20 GRE (Build 82)
+   ''''    By Martin Roesch & The Snort Team: http://www.snort.org/contact#team
+           Copyright (C) 2014-2022 Cisco and/or its affiliates. All rights reserved.
+           Copyright (C) 1998-2013 Sourcefire, Inc., et al.
+           Using libpcap version 1.8.1
+           Using PCRE version: 8.39 2016-06-14
+           Using ZLIB version: 1.2.11
+
+           Rules Engine: SF_SNORT_DETECTION_ENGINE  Version 3.2  <Build 1>
+           Preprocessor Object: SF_IMAP  Version 1.0  <Build 1>
+           Preprocessor Object: SF_FTPTELNET  Version 1.2  <Build 13>
+           Preprocessor Object: SF_GTP  Version 1.1  <Build 1>
+           Preprocessor Object: SF_SMTP  Version 1.1  <Build 9>
+           Preprocessor Object: SF_REPUTATION  Version 1.1  <Build 1>
+           Preprocessor Object: SF_DNP3  Version 1.1  <Build 1>
+           Preprocessor Object: SF_DNS  Version 1.1  <Build 4>
+           Preprocessor Object: SF_DCERPC2  Version 1.0  <Build 3>
+           Preprocessor Object: appid  Version 1.1  <Build 5>
+           Preprocessor Object: SF_MODBUS  Version 1.1  <Build 1>
+           Preprocessor Object: SF_SSLPP  Version 1.1  <Build 4>
+           Preprocessor Object: SF_S7COMMPLUS  Version 1.0  <Build 1>
+           Preprocessor Object: SF_SDF  Version 1.1  <Build 1>
+           Preprocessor Object: SF_SIP  Version 1.1  <Build 1>
+           Preprocessor Object: SF_POP  Version 1.0  <Build 1>
+           Preprocessor Object: SF_SSH  Version 1.1  <Build 3>
+Commencing packet processing (pid=23131)
+05/15-23:32:57.044920  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:58804 -> 192.168.178.81:22
+05/15-23:32:57.040261  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:58716 -> 192.168.178.81:22
+05/15-23:32:57.042300  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:58714 -> 192.168.178.81:22
+05/15-23:32:57.040053  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:58702 -> 192.168.178.81:22
+05/15-23:32:57.043832  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:58748 -> 192.168.178.81:22
+05/15-23:32:57.042303  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:58700 -> 192.168.178.81:22
+05/15-23:32:57.044086  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:58768 -> 192.168.178.81:22
+05/15-23:32:57.045140  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:58818 -> 192.168.178.81:22
+05/15-23:32:57.043830  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:58738 -> 192.168.178.81:22
+05/15-23:33:44.492653  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:60274 -> 192.168.178.81:22
+05/15-23:33:44.514356  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:60284 -> 192.168.178.81:22
+05/15-23:33:44.539755  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:60298 -> 192.168.178.81:22
+05/15-23:33:44.553713  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:60304 -> 192.168.178.81:22
+05/15-23:33:44.575617  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:60318 -> 192.168.178.81:22
+05/15-23:33:44.595911  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:60344 -> 192.168.178.81:22
+05/15-23:33:44.606233  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:60382 -> 192.168.178.81:22
+05/15-23:33:44.591918  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:60346 -> 192.168.178.81:22
+05/15-23:33:44.587027  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:60328 -> 192.168.178.81:22
+05/15-23:33:44.610088  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:60384 -> 192.168.178.81:22
+05/15-23:33:44.595921  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:60360 -> 192.168.178.81:22
+05/15-23:33:44.606031  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:60372 -> 192.168.178.81:22
+05/15-23:33:44.622390  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:60392 -> 192.168.178.81:22
+05/15-23:34:33.827820  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:58598 -> 192.168.178.81:22
+05/15-23:34:33.878809  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:58604 -> 192.168.178.81:22
+05/15-23:34:33.934434  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:58606 -> 192.168.178.81:22
+05/15-23:34:33.950878  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:58612 -> 192.168.178.81:22
+05/15-23:34:33.951018  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:58610 -> 192.168.178.81:22
+05/15-23:34:33.976786  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:58636 -> 192.168.178.81:22
+05/15-23:34:33.963327  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:58628 -> 192.168.178.81:22
+05/15-23:34:33.999090  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:58690 -> 192.168.178.81:22
+05/15-23:34:33.986410  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:58660 -> 192.168.178.81:22
+05/15-23:34:34.010606  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:58706 -> 192.168.178.81:22
+05/15-23:34:33.982984  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:58648 -> 192.168.178.81:22
+05/15-23:34:33.998886  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:58676 -> 192.168.178.81:22
+05/15-23:34:34.222924  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:58712 -> 192.168.178.81:22
+05/15-23:35:21.587131  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:40494 -> 192.168.178.81:22
+05/15-23:35:23.119974  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:40502 -> 192.168.178.81:22
+05/15-23:35:23.165430  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:40504 -> 192.168.178.81:22
+05/15-23:35:23.274581  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:40516 -> 192.168.178.81:22
+05/15-23:35:23.278384  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:40532 -> 192.168.178.81:22
+05/15-23:35:23.298595  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:40548 -> 192.168.178.81:22
+05/15-23:35:23.310829  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:40562 -> 192.168.178.81:22
+05/15-23:35:23.318990  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:40566 -> 192.168.178.81:22
+05/15-23:35:23.333403  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:40578 -> 192.168.178.81:22
+05/15-23:35:23.346122  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:40592 -> 192.168.178.81:22
+05/15-23:35:23.360429  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:40624 -> 192.168.178.81:22
+05/15-23:35:23.372799  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:40630 -> 192.168.178.81:22
+05/15-23:35:23.609766  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:40646 -> 192.168.178.81:22
+05/15-23:36:08.599554  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:54938 -> 192.168.178.81:22
+05/15-23:36:08.651060  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:54942 -> 192.168.178.81:22
+05/15-23:36:08.737035  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:54950 -> 192.168.178.81:22
+05/15-23:36:08.736949  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:54948 -> 192.168.178.81:22
+05/15-23:36:08.779144  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:54966 -> 192.168.178.81:22
+05/15-23:36:08.791808  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:54976 -> 192.168.178.81:22
+05/15-23:36:08.815463  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:54988 -> 192.168.178.81:22
+05/15-23:36:08.838750  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:55020 -> 192.168.178.81:22
+05/15-23:36:08.847030  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:55024 -> 192.168.178.81:22
+05/15-23:36:08.848760  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:55036 -> 192.168.178.81:22
+05/15-23:36:08.830583  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:55004 -> 192.168.178.81:22
+05/15-23:36:08.967752  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:55040 -> 192.168.178.81:22
+05/15-23:36:09.061482  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:55052 -> 192.168.178.81:22
+05/15-23:36:56.020075  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:57362 -> 192.168.178.81:22
+05/15-23:36:56.082422  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:57370 -> 192.168.178.81:22
+05/15-23:36:56.095803  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:57380 -> 192.168.178.81:22
+05/15-23:36:56.108919  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:57388 -> 192.168.178.81:22
+05/15-23:36:56.164988  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:57402 -> 192.168.178.81:22
+05/15-23:36:56.237894  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:57426 -> 192.168.178.81:22
+05/15-23:36:56.232448  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:57414 -> 192.168.178.81:22
+05/15-23:36:56.235196  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:57416 -> 192.168.178.81:22
+05/15-23:36:56.235192  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:57424 -> 192.168.178.81:22
+05/15-23:36:56.251579  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:57440 -> 192.168.178.81:22
+05/15-23:36:56.235199  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:57420 -> 192.168.178.81:22
+05/15-23:36:56.322533  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:57442 -> 192.168.178.81:22
+05/15-23:36:56.441769  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:57450 -> 192.168.178.81:22
+05/15-23:37:41.985352  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:52288 -> 192.168.178.81:22
+05/15-23:37:43.482166  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:52296 -> 192.168.178.81:22
+05/15-23:37:43.530831  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:52304 -> 192.168.178.81:22
+05/15-23:37:43.773750  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:52308 -> 192.168.178.81:22
+05/15-23:37:45.500170  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:43338 -> 192.168.178.81:22
+05/15-23:37:45.502903  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:43346 -> 192.168.178.81:22
+05/15-23:37:45.576803  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:43358 -> 192.168.178.81:22
+05/15-23:37:45.592538  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:43370 -> 192.168.178.81:22
+05/15-23:37:45.603042  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:43386 -> 192.168.178.81:22
+05/15-23:37:45.639639  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:43402 -> 192.168.178.81:22
+05/15-23:37:45.650583  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:43426 -> 192.168.178.81:22
+05/15-23:37:45.660739  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:43434 -> 192.168.178.81:22
+05/15-23:37:45.878573  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:43450 -> 192.168.178.81:22
+05/15-23:38:29.332646  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:47224 -> 192.168.178.81:22
+05/15-23:38:32.771886  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:47236 -> 192.168.178.81:22
+05/15-23:38:32.813232  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:47242 -> 192.168.178.81:22
+05/15-23:38:33.037524  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:47254 -> 192.168.178.81:22
+05/15-23:38:34.768826  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:47266 -> 192.168.178.81:22
+05/15-23:38:34.782242  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:47282 -> 192.168.178.81:22
+05/15-23:38:34.849321  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:47288 -> 192.168.178.81:22
+05/15-23:38:34.878485  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:47304 -> 192.168.178.81:22
+05/15-23:38:34.893484  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:47312 -> 192.168.178.81:22
+05/15-23:38:34.933328  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:47314 -> 192.168.178.81:22
+05/15-23:38:35.162590  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:36988 -> 192.168.178.81:22
+05/15-23:38:36.850371  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:37000 -> 192.168.178.81:22
+05/15-23:38:37.048927  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:37012 -> 192.168.178.81:22
+05/15-23:39:14.837703  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:38166 -> 192.168.178.81:22
+05/15-23:39:18.215293  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:43252 -> 192.168.178.81:22
+05/15-23:39:18.258050  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:43268 -> 192.168.178.81:22
+05/15-23:39:18.498748  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:43280 -> 192.168.178.81:22
+05/15-23:39:20.233774  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:43286 -> 192.168.178.81:22
+05/15-23:39:20.258815  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:43290 -> 192.168.178.81:22
+05/15-23:39:20.423886  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:43306 -> 192.168.178.81:22
+05/15-23:39:22.226496  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:43312 -> 192.168.178.81:22
+05/15-23:39:22.243923  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:43328 -> 192.168.178.81:22
+05/15-23:39:22.258849  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:43332 -> 192.168.178.81:22
+05/15-23:39:22.294105  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:43344 -> 192.168.178.81:22
+05/15-23:39:22.501501  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:43356 -> 192.168.178.81:22
+05/15-23:39:23.032769  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:43400 -> 192.168.178.81:22
+05/15-23:40:04.134036  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:51470 -> 192.168.178.81:22
+05/15-23:40:07.478609  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34784 -> 192.168.178.81:22
+05/15-23:40:07.542421  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34792 -> 192.168.178.81:22
+05/15-23:40:07.587836  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34806 -> 192.168.178.81:22
+05/15-23:40:07.614585  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34810 -> 192.168.178.81:22
+05/15-23:40:07.767665  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34826 -> 192.168.178.81:22
+05/15-23:40:07.779824  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34838 -> 192.168.178.81:22
+05/15-23:40:07.957960  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34848 -> 192.168.178.81:22
+05/15-23:40:08.512593  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34862 -> 192.168.178.81:22
+05/15-23:40:11.524466  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34864 -> 192.168.178.81:22
+05/15-23:40:11.546609  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34874 -> 192.168.178.81:22
+05/15-23:40:11.578209  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34898 -> 192.168.178.81:22
+05/15-23:40:11.564441  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:34884 -> 192.168.178.81:22
+05/15-23:40:51.528290  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:55272 -> 192.168.178.81:22
+05/15-23:40:55.309726  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:52660 -> 192.168.178.81:22
+05/15-23:40:55.880171  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:52664 -> 192.168.178.81:22
+05/15-23:40:58.695368  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:52672 -> 192.168.178.81:22
+05/15-23:40:58.765081  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:52688 -> 192.168.178.81:22
+05/15-23:40:58.788445  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:52696 -> 192.168.178.81:22
+05/15-23:40:58.822025  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:52702 -> 192.168.178.81:22
+05/15-23:40:58.951806  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:52714 -> 192.168.178.81:22
+05/15-23:40:58.962487  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:52718 -> 192.168.178.81:22
+05/15-23:41:02.737173  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:52730 -> 192.168.178.81:22
+05/15-23:41:02.751919  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:52734 -> 192.168.178.81:22
+05/15-23:41:02.784243  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:52752 -> 192.168.178.81:22
+05/15-23:41:03.241256  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:52774 -> 192.168.178.81:22
+05/15-23:41:38.919455  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:42564 -> 192.168.178.81:22
+05/15-23:41:40.763700  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:42570 -> 192.168.178.81:22
+05/15-23:41:43.275112  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:42572 -> 192.168.178.81:22
+05/15-23:41:44.407987  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:42586 -> 192.168.178.81:22
+05/15-23:41:44.415437  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:42588 -> 192.168.178.81:22
+05/15-23:41:47.959048  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:44202 -> 192.168.178.81:22
+05/15-23:41:48.033508  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:44218 -> 192.168.178.81:22
+05/15-23:41:48.072547  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:44228 -> 192.168.178.81:22
+05/15-23:41:48.086362  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:44244 -> 192.168.178.81:22
+05/15-23:41:50.099734  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:44256 -> 192.168.178.81:22
+05/15-23:41:50.173749  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:44282 -> 192.168.178.81:22
+05/15-23:41:50.217333  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:44292 -> 192.168.178.81:22
+05/15-23:41:52.965288  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:44306 -> 192.168.178.81:22
+05/15-23:42:30.055831  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:57540 -> 192.168.178.81:22
+05/15-23:42:30.090669  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:57552 -> 192.168.178.81:22
+05/15-23:42:33.443595  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:57556 -> 192.168.178.81:22
+05/15-23:42:33.508208  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:57570 -> 192.168.178.81:22
+05/15-23:42:33.548461  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:57578 -> 192.168.178.81:22
+05/15-23:42:33.564496  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:57584 -> 192.168.178.81:22
+05/15-23:42:33.678489  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:57590 -> 192.168.178.81:22
+05/15-23:42:33.699353  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:57602 -> 192.168.178.81:22
+05/15-23:42:34.478933  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:57610 -> 192.168.178.81:22
+05/15-23:42:39.389771  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:39328 -> 192.168.178.81:22
+05/15-23:42:39.442923  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:39344 -> 192.168.178.81:22
+05/15-23:42:39.481381  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:39354 -> 192.168.178.81:22
+05/15-23:42:42.266313  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:39358 -> 192.168.178.81:22
+05/15-23:43:21.254343  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:56450 -> 192.168.178.81:22
+05/15-23:43:21.264632  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:56452 -> 192.168.178.81:22
+05/15-23:43:21.840060  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:56462 -> 192.168.178.81:22
+05/15-23:43:22.735361  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:56466 -> 192.168.178.81:22
+05/15-23:43:22.795787  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:56470 -> 192.168.178.81:22
+05/15-23:43:22.821247  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:56476 -> 192.168.178.81:22
+05/15-23:43:22.846689  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:56484 -> 192.168.178.81:22
+05/15-23:43:24.849474  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:56496 -> 192.168.178.81:22
+05/15-23:43:24.862064  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:56502 -> 192.168.178.81:22
+05/15-23:43:26.785138  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33408 -> 192.168.178.81:22
+05/15-23:43:26.817279  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33420 -> 192.168.178.81:22
+05/15-23:43:26.841570  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:33428 -> 192.168.178.81:22
+^C*** Caught Int-Signal
+===============================================================================
+Run time for packet processing was 673.58788 seconds
+Snort processed 34974 packets.
+Snort ran for 0 days 0 hours 11 minutes 13 seconds
+   Pkts/min:         3179
+   Pkts/sec:           51
+===============================================================================
+Memory usage summary:
+  Total non-mmapped bytes (arena):       5820416
+  Bytes in mapped regions (hblkhd):      16240640
+  Total allocated space (uordblks):      3573080
+  Total free space (fordblks):           2247336
+  Topmost releasable block (keepcost):   23952
+===============================================================================
+Packet I/O Totals:
+   Received:        35010
+   Analyzed:        34974 ( 99.897%)
+    Dropped:            0 (  0.000%)
+   Filtered:            0 (  0.000%)
+Outstanding:           36 (  0.103%)
+   Injected:            0
+===============================================================================
+Breakdown by protocol (includes rebuilt packets):
+        Eth:        35113 (100.000%)
+       VLAN:            0 (  0.000%)
+        IP4:        25893 ( 73.742%)
+       Frag:            0 (  0.000%)
+       ICMP:            0 (  0.000%)
+        UDP:         4563 ( 12.995%)
+        TCP:        20644 ( 58.793%)
+        IP6:         5247 ( 14.943%)
+    IP6 Ext:         5708 ( 16.256%)
+   IP6 Opts:          461 (  1.313%)
+      Frag6:            0 (  0.000%)
+      ICMP6:         2533 (  7.214%)
+       UDP6:         2714 (  7.729%)
+       TCP6:            0 (  0.000%)
+     Teredo:            0 (  0.000%)
+    ICMP-IP:            0 (  0.000%)
+    IP4/IP4:            0 (  0.000%)
+    IP4/IP6:            0 (  0.000%)
+    IP6/IP4:            0 (  0.000%)
+    IP6/IP6:            0 (  0.000%)
+        GRE:            0 (  0.000%)
+    GRE Eth:            0 (  0.000%)
+   GRE VLAN:            0 (  0.000%)
+    GRE IP4:            0 (  0.000%)
+    GRE IP6:            0 (  0.000%)
+GRE IP6 Ext:            0 (  0.000%)
+   GRE PPTP:            0 (  0.000%)
+    GRE ARP:            0 (  0.000%)
+    GRE IPX:            0 (  0.000%)
+   GRE Loop:            0 (  0.000%)
+       MPLS:            0 (  0.000%)
+        ARP:           23 (  0.066%)
+        IPX:            0 (  0.000%)
+   Eth Loop:            0 (  0.000%)
+   Eth Disc:            0 (  0.000%)
+   IP4 Disc:            0 (  0.000%)
+   IP6 Disc:            0 (  0.000%)
+   TCP Disc:            0 (  0.000%)
+   UDP Disc:            0 (  0.000%)
+  ICMP Disc:            0 (  0.000%)
+All Discard:            0 (  0.000%)
+      Other:         4636 ( 13.203%)
+Bad Chk Sum:        17383 ( 49.506%)
+    Bad TTL:            0 (  0.000%)
+     S5 G 1:            0 (  0.000%)
+     S5 G 2:          139 (  0.396%)
+      Total:        35113
+===============================================================================
+Action Stats:
+     Alerts:          177 (  0.504%)
+     Logged:          177 (  0.504%)
+     Passed:            0 (  0.000%)
+Limits:
+      Match:            0
+      Queue:            0
+        Log:            0
+      Event:            0
+      Alert:            0
+Verdicts:
+      Allow:        34974 ( 99.897%)
+      Block:            0 (  0.000%)
+    Replace:            0 (  0.000%)
+  AllowFlow:            0 (  0.000%)
+  BlockFlow:            0 (  0.000%)
+     Ignore:            0 (  0.000%)
+      Retry:            0 (  0.000%)
+===============================================================================
+Frag3 statistics:
+        Total Fragments: 0
+      Frags Reassembled: 0
+               Discards: 0
+          Memory Faults: 0
+               Timeouts: 0
+               Overlaps: 0
+              Anomalies: 0
+                 Alerts: 0
+                  Drops: 0
+     FragTrackers Added: 0
+    FragTrackers Dumped: 0
+FragTrackers Auto Freed: 0
+    Frag Nodes Inserted: 0
+     Frag Nodes Deleted: 0
+===============================================================================
+===============================================================================
+Stream statistics:
+            Total sessions: 1572
+              TCP sessions: 204
+       Active TCP sessions: 0
+  Non mempool TCP sess mem: 0
+          TCP mempool used: 51785830865628160
+              UDP sessions: 1368
+       Active UDP sessions: 1368
+          UDP mempool used: 51786552420133888
+             ICMP sessions: 0
+      Active ICMP sessions: 0
+         ICMP mempool used: 51786569600003072
+               IP sessions: 0
+        Active IP sessions: 0
+           IP mempool used: 51786586779872256
+                TCP Prunes: 0
+                UDP Prunes: 0
+               ICMP Prunes: 0
+                 IP Prunes: 0
+TCP StreamTrackers Created: 204
+TCP StreamTrackers Deleted: 204
+              TCP Timeouts: 0
+              TCP Overlaps: 0
+       TCP Segments Queued: 2161
+     TCP Segments Released: 2161
+       TCP Rebuilt Packets: 735
+         TCP Segments Used: 1935
+              TCP Discards: 10
+                  TCP Gaps: 119
+      UDP Sessions Created: 1368
+      UDP Sessions Deleted: 1368
+              UDP Timeouts: 0
+              UDP Discards: 0
+     ICMP Dest unreachable: 0
+ ICMP Fragmentation needed: 0
+                    Events: 192
+           Internal Events: 0
+           TCP Port Filter
+                  Filtered: 0
+                 Inspected: 0
+                   Tracked: 3123
+           UDP Port Filter
+                  Filtered: 0
+                 Inspected: 0
+                   Tracked: 1368
+===============================================================================
+===============================================================================
+FTPTelnet Preprocessor Statistics
+  Current active FTP sessions                   : 0
+  Max concurrent FTP sessions                   : 0
+  Total FTP Data sessions                       : 0
+  Max concurrent FTP Data sessions              : 0
+  Current active Telnet sessions                : 0
+  Max concurrent Telnet sessions                : 0
+  Current ftp_telnet session non-mempool memory : 0
+===============================================================================
+SMTP Preprocessor Statistics
+  Total sessions                                    : 0
+  Max concurrent sessions                           : 0
+===============================================================================
+dcerpc2 Preprocessor Statistics
+  Total sessions: 0
+ Active sessions: 0
+
+  Memory stats (bytes)
+    Current total: 52428800
+    Maximum total: 52515564
+    Current runtime total: 52428800
+    Maximum runtime total: 52428800
+    Current config total: 0
+    Maximum config total: 82292
+    Current rule options total: 0
+    Maximum rule options total: 0
+    Current routing table total: 0
+    Maximum routing table total: 0
+    Current initialization total: 0
+    Maximum initialization total: 4512
+===============================================================================
+===============================================================================
+SIP Preprocessor Statistics
+  Total sessions: 0
+===============================================================================
+IMAP Preprocessor Statistics
+  Total sessions                                    : 0
+  Max concurrent sessions                           : 0
+===============================================================================
+POP Preprocessor Statistics
+  Total sessions                                    : 0
+  Max concurrent sessions                           : 0
+===============================================================================
+
+Memory Statistics of DNS at: Mon May 15 23:43:51 2023
+
+
+Heap Statistics of dns:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              1
+                 No of frees:              1
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              1
+                 No of frees:              1
+===============================================================================
+
+Memory Statistics of Frag3 on: Mon May 15 23:43:51 2023
+
+    Memory in use         : 0
+    prealloc nodes in use : 0
+
+
+Heap Statistics of frag:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              3
+                 No of frees:              3
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              3
+                 No of frees:              3
+===============================================================================
+
+Memory Statistics of FTPTelnet at: Mon May 15 23:43:51 2023
+
+       Current active FTP sessions :    0
+       Max concurrent FTP sessions :    0
+           Total FTP Data sessions :    0
+  Max concurrent FTP Data sessions :    0
+    Current active Telnet sessions :    0
+    Max concurrent Telnet sessions :    0
+
+Heap Statistics of ftptelnet:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:            622
+                 No of frees:            622
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:            622
+                 No of frees:            622
+===============================================================================
+ Memory Statistics of Http Inspect on: Mon May 15 23:43:51 2023
+
+     Current active session          : 0
+    No of POST methods encountered  : 0
+    No of GET methods encountered   : 0
+    No of successfully extract post params      : 0
+    No of successfully extract request params   : 0
+    No of successfully extract response params  : 0
+ Http Memory Pool       :
+      Free Memory:                 0 bytes
+      Used Memory:                 0 bytes
+      Max Memory :                 0 bytes
+ Mime Decode Memory Pool   :
+      Free Memory:                 0 bytes
+      Used Memory:                 0 bytes
+      Max Memory :                 0 bytes
+ Http Gzip Memory Pool     :
+      Free Memory:                 0 bytes
+      Used Memory:                 0 bytes
+      Max Memory :                 0 bytes
+ Http Mime log Memory Pool :
+      Free Memory:                 0 bytes
+      Used Memory:                 0 bytes
+      Max Memory :                 0 bytes
+
+Heap Statistics of httpinspect:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              5
+                 No of frees:              5
+        Session Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              1
+                 No of frees:              1
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              3
+                 No of frees:              3
+        Mempool Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              1
+                 No of frees:              1
+===============================================================================
+SMTP Preprocessor Statistics
+  Total sessions                : 277448
+  Max concurrent sessions       : 277448
+  Current sessions              : 277448
+  SMTP Session
+     Used Memory  :             0
+     No of Allocs :             0
+     No of Frees  :             0
+  SMTP Config
+     Used Memory  :          9356
+     No of Allocs :            19
+     No of Frees  :            71
+   Total memory used :          9356
+
+Heap Statistics of smtp:
+          Total Statistics:
+               Memory in use:           9356 bytes
+                No of allocs:             19
+                 No of frees:             71
+         Config Statistics:
+               Memory in use:           9356 bytes
+                No of allocs:             19
+                 No of frees:             71
+===============================================================================
+
+Memory Statistics of Stream on: Mon May 15 23:43:51 2023
+
+Stream Session Statistics:
+            Total sessions: 1572
+              TCP sessions: 204
+       Active TCP sessions: 0
+              UDP sessions: 1368
+       Active UDP sessions: 1368
+             ICMP sessions: 0
+      Active ICMP sessions: 0
+               IP sessions: 0
+        Active IP sessions: 0
+   TCP Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+   UDP Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+   ICMP Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+   IP Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+   Session Flow Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+
+Heap Statistics of stream:
+          Total Statistics:
+               Memory in use:        2072868 bytes
+                No of allocs:           2376
+                 No of frees:           2372
+        Session Statistics:
+               Memory in use:              0 bytes
+                No of allocs:           2363
+                 No of frees:           2363
+         Config Statistics:
+               Memory in use:        2072868 bytes
+                No of allocs:             13
+                 No of frees:              9
+===============================================================================
+
+Memory Statistics of DCE at: Mon May 15 23:43:51 2023
+
+dcerpc2 Preprocessor Statistics:
+                Total sessions :    0
+               Active sessions :    0
+            Total SMB sessions :    0
+            Total TCP sessions :    0
+            Total UDP sessions :    0
+    Total HTTP server sessions :    0
+     Total HTTP proxy sessions :    0
+Total Memory stats :
+                 Current total :    52428800
+                 Maximum total :    52515564
+                  Total memcap :    0
+                    Free total :    0
+SMB Memory stats :
+                 Current total :    52428800
+                 Maximum total :    52428800
+          Current session data :    52428800
+          Maximum session data :    52428800
+   Current segmentation buffer :    0
+   Maximum segmentation buffer :    0
+TCP Memory stats :
+                 Current total :    0
+                 Maximum total :    0
+          Current session data :    0
+          Maximum session data :    0
+UDP Memory stats :
+                 Current total :    0
+                 Maximum total :    0
+          Current session data :    0
+          Maximum session data :    0
+HTTP Memory stats :
+                 Current total :    0
+                 Maximum total :    0
+          Current session data :    0
+          Maximum session data :    0
+
+Heap Statistics of dce:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:            115
+                 No of frees:            115
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:            115
+                 No of frees:            115
+===============================================================================
+
+Memory Statistics of SIP on: Mon May 15 23:43:51 2023
+
+    Total Sessions          : 277448
+    Current Active Sessions : 0
+
+
+Heap Statistics of sip:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:             22
+                 No of frees:             22
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:             22
+                 No of frees:             22
+===============================================================================
+POP Preprocessor Statistics
+  Total sessions                : 277448
+  Max concurrent sessions       : 277448
+  Current sessions              : 277448
+  POP Session
+     Used Memory  :             0
+     No of Allocs :             0
+     No of Frees  :             0
+  POP Config
+     Used Memory  :           277
+     No of Allocs :             3
+     No of Frees  :            18
+   Total memory used :           277
+
+Heap Statistics of pop:
+          Total Statistics:
+               Memory in use:            277 bytes
+                No of allocs:              3
+                 No of frees:             18
+         Config Statistics:
+               Memory in use:            277 bytes
+                No of allocs:              3
+                 No of frees:             18
+===============================================================================
+IMAP Preprocessor Statistics
+  Total sessions                : 277448
+  Max concurrent sessions       : 277448
+  Current sessions              : 277448
+  IMAP Session
+     Used Memory  :             0
+     No of Allocs :             0
+     No of Frees  :             0
+  IMAP Config
+     Used Memory  :           847
+     No of Allocs :             3
+     No of Frees  :            48
+   Total memory used :           847
+
+Heap Statistics of imap:
+          Total Statistics:
+               Memory in use:            847 bytes
+                No of allocs:              3
+                 No of frees:             48
+         Config Statistics:
+               Memory in use:            847 bytes
+                No of allocs:              3
+                 No of frees:             48
+===============================================================================
+
+Memory Statistics for File at:Mon May 15 23:43:51 2023
+
+Total buffers allocated:           0
+Total buffers freed:               0
+Total buffers released:            0
+Total file mempool:                0
+Total allocated file mempool:      0
+Total freed file mempool:          0
+Total released file mempool:       0
+
+Heap Statistics of file:
+          Total Statistics:
+               Memory in use:            140 bytes
+                No of allocs:              6
+                 No of frees:              1
+        Session Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              1
+                 No of frees:              1
+        Mempool Statistics:
+               Memory in use:            140 bytes
+                No of allocs:              5
+                 No of frees:              0
+===============================================================================
+Snort exiting

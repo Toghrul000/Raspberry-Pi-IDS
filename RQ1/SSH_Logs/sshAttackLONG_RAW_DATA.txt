@@ -1,0 +1,773 @@
+54 min
+
+ 8273 snort     20   0  145024 112148   5604 S   0.3   1.4  12:18.30 snort
+25142 root      20   0   66744  33096   5056 S   0.3   0.4   0:00.25 snort
+25142 root      20   0   66744  33096   5056 S   0.3   0.4   0:00.26 snort
+ 8273 snort     20   0  145024 112148   5604 S   0.3   1.4  12:18.31 snort
+ 8273 snort     20   0  145024 112148   5604 S   0.3   1.4  12:18.32 snort
+25142 root      20   0   66744  35344   7120 S   0.7   0.4   0:00.28 snort
+ 8273 snort     20   0  145024 112148   5604 S   0.3   1.4  12:18.33 snort
+ 8273 snort     20   0  145024 112148   5604 S   0.3   1.4  12:18.34 snort
+25142 root      20   0   66744  35344   7120 S   0.3   0.4   0:00.29 snort
+ 8273 snort     20   0  145024 112148   5604 S   0.3   1.4  12:18.35 snort
+25142 root      20   0   66744  35344   7120 S   0.3   0.4   0:00.30 snort
+25142 root      20   0   66876  35344   7120 S   0.3   0.4   0:00.31 snort
+ 8273 snort     20   0  145024 112148   5604 S   0.3   1.4  12:18.36 snort
+ 8273 snort     20   0  145024 112148   5604 S   0.3   1.4  12:18.37 snort
+25142 root      20   0   66876  35344   7120 S   0.3   0.4   0:00.32 snort
+25142 root      20   0   66876  35344   7120 S   0.3   0.4   0:00.33 snort
+ 8273 snort     20   0  145024 112148   5604 S   0.3   1.4  12:18.38 snort
+ 8273 snort     20   0  145024 112148   5604 S   0.3   1.4  12:18.39 snort
+25142 root      20   0   66876  35344   7120 S   0.7   0.4   0:00.35 snort
+ 8273 snort     20   0  145024 112148   5604 S   0.3   1.4  12:18.40 snort
+ 8273 snort     20   0  145024 112148   5604 S   0.3   1.4  12:18.41 snort
+25142 root      20   0   66876  35344   7120 S   0.3   0.4   0:00.36 snort
+25142 root      20   0   66876  35344   7120 S   0.3   0.4   0:00.37 snort
+ 8273 snort     20   0  145024 112148   5604 S   0.3   1.4  12:18.42 snort
+ 8273 snort     20   0  145024 112148   5604 S   0.3   1.4  12:18.43 snort
+25142 root      20   0   66876  35344   7120 S   0.3   0.4   0:00.38 snort
+ 8273 snort     20   0  145024 112148   5604 S   0.3   1.4  12:18.44 snort
+25142 root      20   0   66876  35344   7120 S   0.3   0.4   0:00.39 snort
+25142 root      20   0   66876  35344   7120 S   0.3   0.4   0:00.40 snort
+ 8273 snort     20   0  145024 112148   5604 S   0.3   1.4  12:18.45 snort
+25142 root      20   0   66876  35344   7120 S   0.7   0.4   0:00.42 snort
+ 8273 snort     20   0  145024 112148   5604 S   0.3   1.4  12:18.47 snort
+ 8273 snort     20   0  145024 112148   5604 S   0.3   1.4  12:18.48 snort
+25142 root      20   0   66876  35344   7120 S   0.3   0.4   0:00.43 snort
+ 8273 snort     20   0  145024 112148   5604 S   0.3   1.4  12:18.49 snort
+25142 root      20   0   66876  35344   7120 S   0.3   0.4   0:00.44 snort
+ 8273 snort     20   0  145024 112148   5604 S   0.3   1.4  12:18.50 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.45 snort
+ 8273 snort     20   0  145024 112148   5604 S   0.7   1.4  12:18.52 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.46 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.47 snort
+ 8273 snort     20   0  145024 112148   5604 S   0.3   1.4  12:18.53 snort
+25142 root      20   0   66876  35500   7120 S   0.7   0.4   0:00.49 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.54 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.55 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.50 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.56 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.51 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.57 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.58 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.53 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.60 snort
+25142 root      20   0   66876  35500   7120 S   0.7   0.4   0:00.56 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.62 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.63 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.57 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.58 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.64 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.59 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.7   1.4  12:18.66 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.60 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.61 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.67 snort
+25142 root      20   0   66876  35500   7120 S   0.7   0.4   0:00.63 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.68 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.69 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.64 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.70 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.65 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.71 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.66 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.72 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.67 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.73 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.68 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.74 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.75 snort
+25142 root      20   0   66876  35500   7120 S   0.7   0.4   0:00.70 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.76 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.71 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.77 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.72 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.78 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.73 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.79 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.80 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.74 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.75 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.81 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.76 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.82 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.83 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.77 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.78 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.84 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.79 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.85 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.86 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.80 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.87 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.81 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.82 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.88 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.89 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.83 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.84 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.90 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.85 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.7   1.4  12:18.92 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.86 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.93 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.87 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.88 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.94 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.95 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.89 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.90 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.96 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.97 snort
+25142 root      20   0   66876  35500   7120 S   0.7   0.4   0:00.92 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.98 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:18.99 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.93 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.94 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:19.00 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:19.01 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.95 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.96 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:19.02 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:19.03 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.97 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:19.04 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.98 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:00.99 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.7   1.4  12:19.06 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.00 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:19.07 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.01 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.02 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:19.08 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:19.09 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.03 snort
+ 8273 snort     20   0  145156 112148   5604 S   0.3   1.4  12:19.10 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.04 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.05 snort
+ 8273 snort     20   0  145288 112148   5604 S   0.3   1.4  12:19.11 snort
+ 8273 snort     20   0  145288 112148   5604 S   0.3   1.4  12:19.12 snort
+25142 root      20   0   66876  35500   7120 S   0.7   0.4   0:01.07 snort
+ 8273 snort     20   0  145288 112148   5604 S   0.3   1.4  12:19.13 snort
+ 8273 snort     20   0  145288 112148   5604 S   0.3   1.4  12:19.14 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.08 snort
+ 8273 snort     20   0  145288 112148   5604 S   0.3   1.4  12:19.15 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.09 snort
+ 8273 snort     20   0  145288 112148   5604 S   0.3   1.4  12:19.16 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.10 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.11 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.17 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.18 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.12 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.19 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.13 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.20 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.14 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.21 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.15 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.22 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.16 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.23 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.24 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.17 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.18 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.25 snort
+25142 root      20   0   66876  35500   7120 S   0.7   0.4   0:01.20 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.26 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.27 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.21 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.22 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.28 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.29 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.23 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.30 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.24 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.31 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.25 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.32 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.26 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.33 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.27 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.34 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.28 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.35 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.29 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.36 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.30 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.37 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.38 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.31 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.32 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.39 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.33 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.40 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.34 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.41 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.35 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.42 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.43 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.36 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.37 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.44 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.38 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.7   1.4  12:19.46 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.39 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.40 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.47 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.48 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.41 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.49 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.42 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.50 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.43 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.44 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.51 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.52 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.45 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.46 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.53 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.54 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.47 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.55 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.56 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.48 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.57 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.49 snort
+ 8273 snort     20   0  145288 112408   5604 S   0.3   1.4  12:19.58 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.50 snort
+25142 root      20   0   66876  35500   7120 S   0.3   0.4   0:01.51 snort
+
+
+Attacker: 
+
+┌──(kali㉿kali)-[~]
+└─$ sudo ./datetime.sh sudo  hydra -l pi -P piPass.txt ssh://192.168.178.81
+Timestamp START: 05/15-22:32:56.141288642
+Hydra v9.4 (c) 2022 by van Hauser/THC & David Maciejak - Please do not use in mi                                                                                                             litary or secret service organizations, or for illegal purposes (this is non-bin                                                                                                             ding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2023-05-15 22:32:                                                                                                             56
+[WARNING] Many SSH configurations limit the number of parallel tasks, it is reco                                                                                                             mmended to reduce the tasks: use -t 4
+[WARNING] Restorefile (you have 10 seconds to abort... (use option -I to skip wa                                                                                                             iting)) from a previous session found, to prevent overwriting, ./hydra.restore
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 10000 login tries (l:1/p:100                                                                                                             00), ~625 tries per task
+[DATA] attacking ssh://192.168.178.81:22/
+[STATUS] 166.00 tries/min, 166 tries in 00:01h, 9835 to do in 00:60h, 15 active
+[STATUS] 105.33 tries/min, 316 tries in 00:03h, 9685 to do in 01:32h, 15 active
+[STATUS] 98.71 tries/min, 691 tries in 00:07h, 9310 to do in 01:35h, 15 active
+[STATUS] 98.53 tries/min, 1478 tries in 00:15h, 8523 to do in 01:27h, 15 active
+[STATUS] 96.52 tries/min, 2992 tries in 00:31h, 7009 to do in 01:13h, 15 active
+[STATUS] 96.02 tries/min, 4513 tries in 00:47h, 5488 to do in 00:58h, 15 active
+
+defender:
+
+
+
+05/15-23:24:34.774737  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:54498 -> 192.168.178.81:22
+05/15-23:24:36.346267  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:55544 -> 192.168.178.81:22
+05/15-23:24:37.095068  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:55552 -> 192.168.178.81:22
+05/15-23:24:37.263525  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:55564 -> 192.168.178.81:22
+05/15-23:24:40.896975  [**] [1:10000015:1] SSH Brute Force Attempt [**] [Priority: 0] {TCP} 192.168.178.75:55568 -> 192.168.178.81:22
+^C*** Caught Int-Signal
+===============================================================================
+Run time for packet processing was 3266.330676 seconds
+Snort processed 161419 packets.
+Snort ran for 0 days 0 hours 54 minutes 26 seconds
+   Pkts/min:         2989
+   Pkts/sec:           49
+===============================================================================
+Memory usage summary:
+  Total non-mmapped bytes (arena):       5820416
+  Bytes in mapped regions (hblkhd):      16240640
+  Total allocated space (uordblks):      3573304
+  Total free space (fordblks):           2247112
+  Topmost releasable block (keepcost):   80432
+===============================================================================
+Packet I/O Totals:
+   Received:       161450
+   Analyzed:       161419 ( 99.981%)
+    Dropped:            0 (  0.000%)
+   Filtered:            0 (  0.000%)
+Outstanding:           31 (  0.019%)
+   Injected:            0
+===============================================================================
+Breakdown by protocol (includes rebuilt packets):
+        Eth:       162179 (100.000%)
+       VLAN:            0 (  0.000%)
+        IP4:       122107 ( 75.291%)
+       Frag:            0 (  0.000%)
+       ICMP:            0 (  0.000%)
+        UDP:        14852 (  9.158%)
+        TCP:       105542 ( 65.077%)
+        IP6:        20705 ( 12.767%)
+    IP6 Ext:        22950 ( 14.151%)
+   IP6 Opts:         2245 (  1.384%)
+      Frag6:            0 (  0.000%)
+      ICMP6:        12586 (  7.761%)
+       UDP6:         8119 (  5.006%)
+       TCP6:            0 (  0.000%)
+     Teredo:            0 (  0.000%)
+    ICMP-IP:            0 (  0.000%)
+    IP4/IP4:            0 (  0.000%)
+    IP4/IP6:            0 (  0.000%)
+    IP6/IP4:            0 (  0.000%)
+    IP6/IP6:            0 (  0.000%)
+        GRE:            0 (  0.000%)
+    GRE Eth:            0 (  0.000%)
+   GRE VLAN:            0 (  0.000%)
+    GRE IP4:            0 (  0.000%)
+    GRE IP6:            0 (  0.000%)
+GRE IP6 Ext:            0 (  0.000%)
+   GRE PPTP:            0 (  0.000%)
+    GRE ARP:            0 (  0.000%)
+    GRE IPX:            0 (  0.000%)
+   GRE Loop:            0 (  0.000%)
+       MPLS:            0 (  0.000%)
+        ARP:          147 (  0.091%)
+        IPX:            0 (  0.000%)
+   Eth Loop:            0 (  0.000%)
+   Eth Disc:            0 (  0.000%)
+   IP4 Disc:            0 (  0.000%)
+   IP6 Disc:            0 (  0.000%)
+   TCP Disc:            0 (  0.000%)
+   UDP Disc:            0 (  0.000%)
+  ICMP Disc:            0 (  0.000%)
+All Discard:            0 (  0.000%)
+      Other:        20933 ( 12.907%)
+Bad Chk Sum:        87580 ( 54.002%)
+    Bad TTL:            0 (  0.000%)
+     S5 G 1:            0 (  0.000%)
+     S5 G 2:          760 (  0.469%)
+      Total:       162179
+===============================================================================
+Action Stats:
+     Alerts:          971 (  0.599%)
+     Logged:          971 (  0.599%)
+     Passed:            0 (  0.000%)
+Limits:
+      Match:            0
+      Queue:            0
+        Log:            0
+      Event:            0
+      Alert:            0
+Verdicts:
+      Allow:       161419 ( 99.981%)
+      Block:            0 (  0.000%)
+    Replace:            0 (  0.000%)
+  AllowFlow:            0 (  0.000%)
+  BlockFlow:            0 (  0.000%)
+     Ignore:            0 (  0.000%)
+      Retry:            0 (  0.000%)
+===============================================================================
+Frag3 statistics:
+        Total Fragments: 0
+      Frags Reassembled: 0
+               Discards: 0
+          Memory Faults: 0
+               Timeouts: 0
+               Overlaps: 0
+              Anomalies: 0
+                 Alerts: 0
+                  Drops: 0
+     FragTrackers Added: 0
+    FragTrackers Dumped: 0
+FragTrackers Auto Freed: 0
+    Frag Nodes Inserted: 0
+     Frag Nodes Deleted: 0
+===============================================================================
+===============================================================================
+Stream statistics:
+            Total sessions: 4392
+              TCP sessions: 1141
+       Active TCP sessions: 0
+  Non mempool TCP sess mem: 0
+          TCP mempool used: 51785832895225600
+              UDP sessions: 3251
+       Active UDP sessions: 3251
+          UDP mempool used: 51786554449731328
+             ICMP sessions: 0
+      Active ICMP sessions: 0
+         ICMP mempool used: 51786571629600512
+               IP sessions: 0
+        Active IP sessions: 0
+           IP mempool used: 51786588809469696
+                TCP Prunes: 0
+                UDP Prunes: 0
+               ICMP Prunes: 0
+                 IP Prunes: 0
+TCP StreamTrackers Created: 1141
+TCP StreamTrackers Deleted: 1141
+              TCP Timeouts: 0
+              TCP Overlaps: 0
+       TCP Segments Queued: 11936
+     TCP Segments Released: 11936
+       TCP Rebuilt Packets: 4104
+         TCP Segments Used: 10761
+              TCP Discards: 18
+                  TCP Gaps: 601
+      UDP Sessions Created: 3251
+      UDP Sessions Deleted: 3251
+              UDP Timeouts: 0
+              UDP Discards: 0
+     ICMP Dest unreachable: 0
+ ICMP Fragmentation needed: 0
+                    Events: 999
+           Internal Events: 0
+           TCP Port Filter
+                  Filtered: 0
+                 Inspected: 0
+                   Tracked: 17212
+           UDP Port Filter
+                  Filtered: 0
+                 Inspected: 0
+                   Tracked: 3251
+===============================================================================
+===============================================================================
+FTPTelnet Preprocessor Statistics
+  Current active FTP sessions                   : 0
+  Max concurrent FTP sessions                   : 0
+  Total FTP Data sessions                       : 0
+  Max concurrent FTP Data sessions              : 0
+  Current active Telnet sessions                : 0
+  Max concurrent Telnet sessions                : 0
+  Current ftp_telnet session non-mempool memory : 0
+===============================================================================
+SMTP Preprocessor Statistics
+  Total sessions                                    : 0
+  Max concurrent sessions                           : 0
+===============================================================================
+dcerpc2 Preprocessor Statistics
+  Total sessions: 0
+ Active sessions: 0
+
+  Memory stats (bytes)
+    Current total: 52428800
+    Maximum total: 52515564
+    Current runtime total: 52428800
+    Maximum runtime total: 52428800
+    Current config total: 0
+    Maximum config total: 82292
+    Current rule options total: 0
+    Maximum rule options total: 0
+    Current routing table total: 0
+    Maximum routing table total: 0
+    Current initialization total: 0
+    Maximum initialization total: 4512
+===============================================================================
+===============================================================================
+SIP Preprocessor Statistics
+  Total sessions: 0
+===============================================================================
+IMAP Preprocessor Statistics
+  Total sessions                                    : 0
+  Max concurrent sessions                           : 0
+===============================================================================
+POP Preprocessor Statistics
+  Total sessions                                    : 0
+  Max concurrent sessions                           : 0
+===============================================================================
+
+Memory Statistics of DNS at: Mon May 15 23:27:14 2023
+
+
+Heap Statistics of dns:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              1
+                 No of frees:              1
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              1
+                 No of frees:              1
+===============================================================================
+
+Memory Statistics of Frag3 on: Mon May 15 23:27:14 2023
+
+    Memory in use         : 0
+    prealloc nodes in use : 0
+
+
+Heap Statistics of frag:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              3
+                 No of frees:              3
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              3
+                 No of frees:              3
+===============================================================================
+
+Memory Statistics of FTPTelnet at: Mon May 15 23:27:14 2023
+
+       Current active FTP sessions :    0
+       Max concurrent FTP sessions :    0
+           Total FTP Data sessions :    0
+  Max concurrent FTP Data sessions :    0
+    Current active Telnet sessions :    0
+    Max concurrent Telnet sessions :    0
+
+Heap Statistics of ftptelnet:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:            622
+                 No of frees:            622
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:            622
+                 No of frees:            622
+===============================================================================
+ Memory Statistics of Http Inspect on: Mon May 15 23:27:14 2023
+
+     Current active session          : 0
+    No of POST methods encountered  : 0
+    No of GET methods encountered   : 0
+    No of successfully extract post params      : 0
+    No of successfully extract request params   : 0
+    No of successfully extract response params  : 0
+ Http Memory Pool       :
+      Free Memory:                 0 bytes
+      Used Memory:                 0 bytes
+      Max Memory :                 0 bytes
+ Mime Decode Memory Pool   :
+      Free Memory:                 0 bytes
+      Used Memory:                 0 bytes
+      Max Memory :                 0 bytes
+ Http Gzip Memory Pool     :
+      Free Memory:                 0 bytes
+      Used Memory:                 0 bytes
+      Max Memory :                 0 bytes
+ Http Mime log Memory Pool :
+      Free Memory:                 0 bytes
+      Used Memory:                 0 bytes
+      Max Memory :                 0 bytes
+
+Heap Statistics of httpinspect:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              5
+                 No of frees:              5
+        Session Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              1
+                 No of frees:              1
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              3
+                 No of frees:              3
+        Mempool Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              1
+                 No of frees:              1
+===============================================================================
+SMTP Preprocessor Statistics
+  Total sessions                : 277448
+  Max concurrent sessions       : 277448
+  Current sessions              : 277448
+  SMTP Session
+     Used Memory  :             0
+     No of Allocs :             0
+     No of Frees  :             0
+  SMTP Config
+     Used Memory  :          9356
+     No of Allocs :            19
+     No of Frees  :            71
+   Total memory used :          9356
+
+Heap Statistics of smtp:
+          Total Statistics:
+               Memory in use:           9356 bytes
+                No of allocs:             19
+                 No of frees:             71
+         Config Statistics:
+               Memory in use:           9356 bytes
+                No of allocs:             19
+                 No of frees:             71
+===============================================================================
+
+Memory Statistics of Stream on: Mon May 15 23:27:14 2023
+
+Stream Session Statistics:
+            Total sessions: 4392
+              TCP sessions: 1141
+       Active TCP sessions: 0
+              UDP sessions: 3251
+       Active UDP sessions: 3251
+             ICMP sessions: 0
+      Active ICMP sessions: 0
+               IP sessions: 0
+        Active IP sessions: 0
+   TCP Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+   UDP Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+   ICMP Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+   IP Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+   Session Flow Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+
+Heap Statistics of stream:
+          Total Statistics:
+               Memory in use:        2072868 bytes
+                No of allocs:          13090
+                 No of frees:          13086
+        Session Statistics:
+               Memory in use:              0 bytes
+                No of allocs:          13077
+                 No of frees:          13077
+         Config Statistics:
+               Memory in use:        2072868 bytes
+                No of allocs:             13
+                 No of frees:              9
+===============================================================================
+
+Memory Statistics of DCE at: Mon May 15 23:27:14 2023
+
+dcerpc2 Preprocessor Statistics:
+                Total sessions :    0
+               Active sessions :    0
+            Total SMB sessions :    0
+            Total TCP sessions :    0
+            Total UDP sessions :    0
+    Total HTTP server sessions :    0
+     Total HTTP proxy sessions :    0
+Total Memory stats :
+                 Current total :    52428800
+                 Maximum total :    52515564
+                  Total memcap :    0
+                    Free total :    0
+SMB Memory stats :
+                 Current total :    52428800
+                 Maximum total :    52428800
+          Current session data :    52428800
+          Maximum session data :    52428800
+   Current segmentation buffer :    0
+   Maximum segmentation buffer :    0
+TCP Memory stats :
+                 Current total :    0
+                 Maximum total :    0
+          Current session data :    0
+          Maximum session data :    0
+UDP Memory stats :
+                 Current total :    0
+                 Maximum total :    0
+          Current session data :    0
+          Maximum session data :    0
+HTTP Memory stats :
+                 Current total :    0
+                 Maximum total :    0
+          Current session data :    0
+          Maximum session data :    0
+
+Heap Statistics of dce:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:            115
+                 No of frees:            115
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:            115
+                 No of frees:            115
+===============================================================================
+
+Memory Statistics of SIP on: Mon May 15 23:27:14 2023
+
+    Total Sessions          : 277448
+    Current Active Sessions : 0
+
+
+Heap Statistics of sip:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:             22
+                 No of frees:             22
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:             22
+                 No of frees:             22
+===============================================================================
+POP Preprocessor Statistics
+  Total sessions                : 277448
+  Max concurrent sessions       : 277448
+  Current sessions              : 277448
+  POP Session
+     Used Memory  :             0
+     No of Allocs :             0
+     No of Frees  :             0
+  POP Config
+     Used Memory  :           277
+     No of Allocs :             3
+     No of Frees  :            18
+   Total memory used :           277
+
+Heap Statistics of pop:
+          Total Statistics:
+               Memory in use:            277 bytes
+                No of allocs:              3
+                 No of frees:             18
+         Config Statistics:
+               Memory in use:            277 bytes
+                No of allocs:              3
+                 No of frees:             18
+===============================================================================
+IMAP Preprocessor Statistics
+  Total sessions                : 277448
+  Max concurrent sessions       : 277448
+  Current sessions              : 277448
+  IMAP Session
+     Used Memory  :             0
+     No of Allocs :             0
+     No of Frees  :             0
+  IMAP Config
+     Used Memory  :           847
+     No of Allocs :             3
+     No of Frees  :            48
+   Total memory used :           847
+
+Heap Statistics of imap:
+          Total Statistics:
+               Memory in use:            847 bytes
+                No of allocs:              3
+                 No of frees:             48
+         Config Statistics:
+               Memory in use:            847 bytes
+                No of allocs:              3
+                 No of frees:             48
+===============================================================================
+
+Memory Statistics for File at:Mon May 15 23:27:14 2023
+
+Total buffers allocated:           0
+Total buffers freed:               0
+Total buffers released:            0
+Total file mempool:                0
+Total allocated file mempool:      0
+Total freed file mempool:          0
+Total released file mempool:       0
+
+Heap Statistics of file:
+          Total Statistics:
+               Memory in use:            140 bytes
+                No of allocs:              6
+                 No of frees:              1
+        Session Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              1
+                 No of frees:              1
+        Mempool Statistics:
+               Memory in use:            140 bytes
+                No of allocs:              5
+                 No of frees:              0
+===============================================================================
+
+

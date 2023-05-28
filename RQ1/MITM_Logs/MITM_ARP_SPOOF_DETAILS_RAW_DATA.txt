@@ -1,0 +1,619 @@
+
+Defender:
+
+response time: instant
+
+
+
+05/20-19:51:51.633388  [**] [1:469:3] ICMP PING NMAP [**] [Classification: Attempted Information Leak] [Priority: 2] {ICMP} 192.168.178.1 -> 192.168.178.81
+05/20-19:51:51.633395  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:51:52.643208  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:51:53.652973  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:51:54.662763  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:51:55.672573  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:52:05.678032  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:52:15.685407  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:52:25.688875  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:52:35.696306  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:52:45.699776  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:52:55.705195  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:53:05.713368  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:53:15.716259  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:53:25.723647  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:53:35.728964  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:53:45.734367  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:53:55.739831  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:54:05.743608  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:54:15.749082  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:54:25.754560  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:54:35.761634  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:54:45.765595  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:54:55.770993  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:55:05.776430  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:55:15.782485  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:55:25.787929  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:55:35.793811  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:55:45.798899  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:55:55.804367  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:56:05.809817  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:56:15.815314  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:56:25.821084  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:56:35.826264  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:56:45.831566  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+05/20-19:56:55.837093  [**] [112:4:1] (spp_arpspoof) Attempted ARP cache overwrite attack [**]
+^C*** Caught Int-Signal
+===============================================================================
+Run time for packet processing was 340.97310 seconds
+Snort processed 23358 packets.
+Snort ran for 0 days 0 hours 5 minutes 40 seconds
+   Pkts/min:         4671
+   Pkts/sec:           68
+===============================================================================
+Memory usage summary:
+  Total non-mmapped bytes (arena):       37040128
+  Bytes in mapped regions (hblkhd):      13082624
+  Total allocated space (uordblks):      34458128
+  Total free space (fordblks):           2582000
+  Topmost releasable block (keepcost):   115520
+===============================================================================
+Packet I/O Totals:
+   Received:        23392
+   Analyzed:        23358 ( 99.855%)
+    Dropped:            0 (  0.000%)
+   Filtered:            0 (  0.000%)
+Outstanding:           34 (  0.145%)
+   Injected:            0
+===============================================================================
+Breakdown by protocol (includes rebuilt packets):
+        Eth:        23362 (100.000%)
+       VLAN:            0 (  0.000%)
+        IP4:        19793 ( 84.723%)
+       Frag:            0 (  0.000%)
+       ICMP:            2 (  0.009%)
+        UDP:         1477 (  6.322%)
+        TCP:        18147 ( 77.677%)
+        IP6:         1487 (  6.365%)
+    IP6 Ext:         1717 (  7.350%)
+   IP6 Opts:          230 (  0.985%)
+      Frag6:            0 (  0.000%)
+      ICMP6:          693 (  2.966%)
+       UDP6:          794 (  3.399%)
+       TCP6:            0 (  0.000%)
+     Teredo:            0 (  0.000%)
+    ICMP-IP:            0 (  0.000%)
+    IP4/IP4:            0 (  0.000%)
+    IP4/IP6:            0 (  0.000%)
+    IP6/IP4:            0 (  0.000%)
+    IP6/IP6:            0 (  0.000%)
+        GRE:            0 (  0.000%)
+    GRE Eth:            0 (  0.000%)
+   GRE VLAN:            0 (  0.000%)
+    GRE IP4:            0 (  0.000%)
+    GRE IP6:            0 (  0.000%)
+GRE IP6 Ext:            0 (  0.000%)
+   GRE PPTP:            0 (  0.000%)
+    GRE ARP:            0 (  0.000%)
+    GRE IPX:            0 (  0.000%)
+   GRE Loop:            0 (  0.000%)
+       MPLS:            0 (  0.000%)
+        ARP:           38 (  0.163%)
+        IPX:            0 (  0.000%)
+   Eth Loop:            0 (  0.000%)
+   Eth Disc:            0 (  0.000%)
+   IP4 Disc:            0 (  0.000%)
+   IP6 Disc:            0 (  0.000%)
+   TCP Disc:            0 (  0.000%)
+   UDP Disc:            0 (  0.000%)
+  ICMP Disc:            0 (  0.000%)
+All Discard:            0 (  0.000%)
+      Other:         2211 (  9.464%)
+Bad Chk Sum:        10823 ( 46.327%)
+    Bad TTL:            0 (  0.000%)
+     S5 G 1:            0 (  0.000%)
+     S5 G 2:            4 (  0.017%)
+      Total:        23362
+===============================================================================
+Action Stats:
+     Alerts:           36 (  0.154%)
+     Logged:           36 (  0.154%)
+     Passed:            0 (  0.000%)
+Limits:
+      Match:            0
+      Queue:            0
+        Log:            0
+      Event:          636
+      Alert:            0
+Verdicts:
+      Allow:        23358 ( 99.855%)
+      Block:            0 (  0.000%)
+    Replace:            0 (  0.000%)
+  AllowFlow:            0 (  0.000%)
+  BlockFlow:            0 (  0.000%)
+     Ignore:            0 (  0.000%)
+      Retry:            0 (  0.000%)
+===============================================================================
+Frag3 statistics:
+        Total Fragments: 0
+      Frags Reassembled: 0
+               Discards: 0
+          Memory Faults: 0
+               Timeouts: 0
+               Overlaps: 0
+              Anomalies: 0
+                 Alerts: 0
+                  Drops: 0
+     FragTrackers Added: 0
+    FragTrackers Dumped: 0
+FragTrackers Auto Freed: 0
+    Frag Nodes Inserted: 0
+     Frag Nodes Deleted: 0
+===============================================================================
+===============================================================================
+Stream statistics:
+            Total sessions: 660
+              TCP sessions: 340
+       Active TCP sessions: 0
+  Non mempool TCP sess mem: 0
+          TCP mempool used: 51785829615406336
+              UDP sessions: 320
+       Active UDP sessions: 320
+          UDP mempool used: 51786551169912064
+             ICMP sessions: 0
+      Active ICMP sessions: 0
+         ICMP mempool used: 51786568349781248
+               IP sessions: 0
+        Active IP sessions: 0
+           IP mempool used: 51786585529650432
+                TCP Prunes: 0
+                UDP Prunes: 0
+               ICMP Prunes: 0
+                 IP Prunes: 0
+TCP StreamTrackers Created: 340
+TCP StreamTrackers Deleted: 340
+              TCP Timeouts: 0
+              TCP Overlaps: 0
+       TCP Segments Queued: 349
+     TCP Segments Released: 349
+       TCP Rebuilt Packets: 0
+         TCP Segments Used: 0
+              TCP Discards: 0
+                  TCP Gaps: 0
+      UDP Sessions Created: 320
+      UDP Sessions Deleted: 320
+              UDP Timeouts: 0
+              UDP Discards: 0
+     ICMP Dest unreachable: 0
+ ICMP Fragmentation needed: 0
+                    Events: 2154
+           Internal Events: 0
+           TCP Port Filter
+                  Filtered: 0
+                 Inspected: 0
+                   Tracked: 7329
+           UDP Port Filter
+                  Filtered: 0
+                 Inspected: 0
+                   Tracked: 320
+===============================================================================
+HTTP Inspect - encodings (Note: stream-reassembled packets included):
+    POST methods:                         0
+    GET methods:                          0
+    HTTP Request Headers extracted:       0
+    HTTP Request Cookies extracted:       0
+    Post parameters extracted:            0
+    HTTP response Headers extracted:      0
+    HTTP Response Cookies extracted:      0
+    Unicode:                              0
+    Double unicode:                       0
+    Non-ASCII representable:              0
+    Directory traversals:                 0
+    Extra slashes ("//"):                 0
+    Self-referencing paths ("./"):        0
+    HTTP Response Gzip packets extracted: 0
+    Gzip Compressed Data Processed:       n/a
+    Gzip Decompressed Data Processed:     n/a
+    Http/2 Rebuilt Packets:               0
+    Total packets processed:              2
+    Non-mempool session memory:           0
+    http_mempool used:                    765626230482406656
+    hi_gzip_mempool used:                 765626230482406656
+    mime_decode_mempool used:             765626230482406656
+    mime_log_mempool used:                765626230482406656
+    Current active session:               0
+===============================================================================
+FTPTelnet Preprocessor Statistics
+  Current active FTP sessions                   : 0
+  Max concurrent FTP sessions                   : 0
+  Total FTP Data sessions                       : 0
+  Max concurrent FTP Data sessions              : 0
+  Current active Telnet sessions                : 0
+  Max concurrent Telnet sessions                : 0
+  Current ftp_telnet session non-mempool memory : 0
+===============================================================================
+SMTP Preprocessor Statistics
+  Total sessions                                    : 0
+  Max concurrent sessions                           : 0
+===============================================================================
+dcerpc2 Preprocessor Statistics
+  Total sessions: 0
+ Active sessions: 0
+
+  Memory stats (bytes)
+    Current total: 52428800
+    Maximum total: 52515564
+    Current runtime total: 52428800
+    Maximum runtime total: 52428800
+    Current config total: 0
+    Maximum config total: 82292
+    Current rule options total: 0
+    Maximum rule options total: 0
+    Current routing table total: 0
+    Maximum routing table total: 0
+    Current initialization total: 0
+    Maximum initialization total: 4512
+===============================================================================
+===============================================================================
+SIP Preprocessor Statistics
+  Total sessions: 0
+===============================================================================
+IMAP Preprocessor Statistics
+  Total sessions                                    : 0
+  Max concurrent sessions                           : 0
+===============================================================================
+POP Preprocessor Statistics
+  Total sessions                                    : 0
+  Max concurrent sessions                           : 0
+===============================================================================
+
+Memory Statistics of DNS at: Sat May 20 19:57:06 2023
+
+
+Heap Statistics of dns:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              1
+                 No of frees:              1
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              1
+                 No of frees:              1
+===============================================================================
+
+Memory Statistics of Frag3 on: Sat May 20 19:57:06 2023
+
+    Memory in use         : 0
+    prealloc nodes in use : 0
+
+
+Heap Statistics of frag:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              3
+                 No of frees:              3
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              3
+                 No of frees:              3
+===============================================================================
+
+Memory Statistics of FTPTelnet at: Sat May 20 19:57:06 2023
+
+       Current active FTP sessions :    0
+       Max concurrent FTP sessions :    0
+           Total FTP Data sessions :    0
+  Max concurrent FTP Data sessions :    0
+    Current active Telnet sessions :    0
+    Max concurrent Telnet sessions :    0
+
+Heap Statistics of ftptelnet:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:            622
+                 No of frees:            622
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:            622
+                 No of frees:            622
+===============================================================================
+ Memory Statistics of Http Inspect on: Sat May 20 19:57:06 2023
+
+     Current active session          : 0
+    No of POST methods encountered  : 0
+    No of GET methods encountered   : 0
+    No of successfully extract post params      : 0
+    No of successfully extract request params   : 0
+    No of successfully extract response params  : 0
+ Http Memory Pool       :
+      Free Memory:                 0 bytes
+      Used Memory:                 0 bytes
+      Max Memory :                 0 bytes
+ Mime Decode Memory Pool   :
+      Free Memory:                 0 bytes
+      Used Memory:                 0 bytes
+      Max Memory :                 0 bytes
+ Http Gzip Memory Pool     :
+      Free Memory:                 0 bytes
+      Used Memory:                 0 bytes
+      Max Memory :                 0 bytes
+ Http Mime log Memory Pool :
+      Free Memory:                 0 bytes
+      Used Memory:                 0 bytes
+      Max Memory :                 0 bytes
+
+Heap Statistics of httpinspect:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              5
+                 No of frees:              5
+        Session Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              1
+                 No of frees:              1
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              3
+                 No of frees:              3
+        Mempool Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              1
+                 No of frees:              1
+===============================================================================
+SMTP Preprocessor Statistics
+  Total sessions                : 277448
+  Max concurrent sessions       : 277448
+  Current sessions              : 277448
+  SMTP Session
+     Used Memory  :             0
+     No of Allocs :             0
+     No of Frees  :             0
+  SMTP Config
+     Used Memory  :          9356
+     No of Allocs :            19
+     No of Frees  :            71
+   Total memory used :          9356
+
+Heap Statistics of smtp:
+          Total Statistics:
+               Memory in use:           9356 bytes
+                No of allocs:             19
+                 No of frees:             71
+         Config Statistics:
+               Memory in use:           9356 bytes
+                No of allocs:             19
+                 No of frees:             71
+===============================================================================
+
+Memory Statistics of Stream on: Sat May 20 19:57:06 2023
+
+Stream Session Statistics:
+            Total sessions: 660
+              TCP sessions: 340
+       Active TCP sessions: 0
+              UDP sessions: 320
+       Active UDP sessions: 320
+             ICMP sessions: 0
+      Active ICMP sessions: 0
+               IP sessions: 0
+        Active IP sessions: 0
+   TCP Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+   UDP Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+   ICMP Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+   IP Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+   Session Flow Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+
+Heap Statistics of stream:
+          Total Statistics:
+               Memory in use:        2072868 bytes
+                No of allocs:            366
+                 No of frees:            362
+        Session Statistics:
+               Memory in use:              0 bytes
+                No of allocs:            353
+                 No of frees:            353
+         Config Statistics:
+               Memory in use:        2072868 bytes
+                No of allocs:             13
+                 No of frees:              9
+===============================================================================
+
+Memory Statistics of DCE at: Sat May 20 19:57:06 2023
+
+dcerpc2 Preprocessor Statistics:
+                Total sessions :    0
+               Active sessions :    0
+            Total SMB sessions :    0
+            Total TCP sessions :    0
+            Total UDP sessions :    0
+    Total HTTP server sessions :    0
+     Total HTTP proxy sessions :    0
+Total Memory stats :
+                 Current total :    52428800
+                 Maximum total :    52515564
+                  Total memcap :    0
+                    Free total :    0
+SMB Memory stats :
+                 Current total :    52428800
+                 Maximum total :    52428800
+          Current session data :    52428800
+          Maximum session data :    52428800
+   Current segmentation buffer :    0
+   Maximum segmentation buffer :    0
+TCP Memory stats :
+                 Current total :    0
+                 Maximum total :    0
+          Current session data :    0
+          Maximum session data :    0
+UDP Memory stats :
+                 Current total :    0
+                 Maximum total :    0
+          Current session data :    0
+          Maximum session data :    0
+HTTP Memory stats :
+                 Current total :    0
+                 Maximum total :    0
+          Current session data :    0
+          Maximum session data :    0
+
+Heap Statistics of dce:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:            115
+                 No of frees:            115
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:            115
+                 No of frees:            115
+===============================================================================
+
+Memory Statistics of SIP on: Sat May 20 19:57:06 2023
+
+    Total Sessions          : 277448
+    Current Active Sessions : 0
+
+
+Heap Statistics of sip:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:             22
+                 No of frees:             22
+         Config Statistics:
+               Memory in use:              0 bytes
+                No of allocs:             22
+                 No of frees:             22
+===============================================================================
+POP Preprocessor Statistics
+  Total sessions                : 277448
+  Max concurrent sessions       : 277448
+  Current sessions              : 277448
+  POP Session
+     Used Memory  :             0
+     No of Allocs :             0
+     No of Frees  :             0
+  POP Config
+     Used Memory  :           277
+     No of Allocs :             3
+     No of Frees  :            18
+   Total memory used :           277
+
+Heap Statistics of pop:
+          Total Statistics:
+               Memory in use:            277 bytes
+                No of allocs:              3
+                 No of frees:             18
+         Config Statistics:
+               Memory in use:            277 bytes
+                No of allocs:              3
+                 No of frees:             18
+===============================================================================
+IMAP Preprocessor Statistics
+  Total sessions                : 277448
+  Max concurrent sessions       : 277448
+  Current sessions              : 277448
+  IMAP Session
+     Used Memory  :             0
+     No of Allocs :             0
+     No of Frees  :             0
+  IMAP Config
+     Used Memory  :           847
+     No of Allocs :             3
+     No of Frees  :            48
+   Total memory used :           847
+
+Heap Statistics of imap:
+          Total Statistics:
+               Memory in use:            847 bytes
+                No of allocs:              3
+                 No of frees:             48
+         Config Statistics:
+               Memory in use:            847 bytes
+                No of allocs:              3
+                 No of frees:             48
+===============================================================================
+
+Memory Statistics for File at:Sat May 20 19:57:06 2023
+
+Total buffers allocated:           0
+Total buffers freed:               0
+Total buffers released:            0
+Total file mempool:                0
+Total allocated file mempool:      0
+Total freed file mempool:          0
+Total released file mempool:       0
+
+Heap Statistics of file:
+          Total Statistics:
+               Memory in use:            140 bytes
+                No of allocs:              6
+                 No of frees:              1
+        Session Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              1
+                 No of frees:              1
+        Mempool Statistics:
+               Memory in use:            140 bytes
+                No of allocs:              5
+                 No of frees:              0
+===============================================================================
++-----------------------[filtered events]--------------------------------------
+| gen-id=1      sig-id=40000056   type=Threshold tracking=src count=100 seconds=10  filtered=636
+
+
+
+resource
+
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.29 snort
+  667 snort     20   0   69916  37012   5508 S   0.3   0.5   0:06.09 snort
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.30 snort
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.31 snort
+  667 snort     20   0   69916  37012   5508 S   0.3   0.5   0:06.10 snort
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.32 snort
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.33 snort
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.34 snort
+  667 snort     20   0   69916  37012   5508 S   0.7   0.5   0:06.12 snort
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.35 snort
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.36 snort
+  667 snort     20   0   69916  37012   5508 S   0.3   0.5   0:06.13 snort
+12521 root      20   0   94280  66192   7120 S   0.7   0.8   0:01.38 snort
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.39 snort
+  667 snort     20   0   69916  37012   5508 S   0.3   0.5   0:06.14 snort
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.40 snort
+  667 snort     20   0   69916  37012   5508 S   0.3   0.5   0:06.15 snort
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.41 snort
+  667 snort     20   0   69916  37012   5508 S   0.3   0.5   0:06.16 snort
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.42 snort
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.43 snort
+  667 snort     20   0   69916  37012   5508 S   0.3   0.5   0:06.17 snort
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.44 snort
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.45 snort
+  667 snort     20   0   69916  37012   5508 S   0.3   0.5   0:06.18 snort
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.46 snort
+  667 snort     20   0   69916  37012   5508 S   0.3   0.5   0:06.19 snort
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.47 snort
+  667 snort     20   0   69916  37012   5508 S   0.3   0.5   0:06.20 snort
+12521 root      20   0   94280  66192   7120 S   0.7   0.8   0:01.49 snort
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.50 snort
+  667 snort     20   0   69916  37012   5508 S   0.3   0.5   0:06.21 snort
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.51 snort
+  667 snort     20   0   69916  37012   5508 S   0.7   0.5   0:06.23 snort
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.52 snort
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.53 snort
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.54 snort
+  667 snort     20   0   69916  37012   5508 S   0.3   0.5   0:06.24 snort
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.55 snort
+12521 root      20   0   94280  66192   7120 S   0.3   0.8   0:01.56 snort
+  667 snort     20   0   69916  37012   5508 S   0.3   0.5   0:06.25 snort
